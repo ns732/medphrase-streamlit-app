@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import html
+import base64
 from pathlib import Path
 from typing import Any
 
@@ -25,6 +26,10 @@ st.set_page_config(
 
 ROOT = Path(__file__).parent
 ASSETS = ROOT / "assets"
+LOGO_PATH = ASSETS / "medphrase_logo.png"
+# For simple GitHub web uploads, the same logo may also be placed in the repo root.
+if not LOGO_PATH.exists() and (ROOT / "medphrase_logo.png").exists():
+    LOGO_PATH = ROOT / "medphrase_logo.png"
 BIOBERT_LOCAL_DIR = ASSETS / "biobert"
 CANDIDATES_PATH = ASSETS / "candidate_adr_table.csv"
 EMBEDDINGS_PATH = ASSETS / "concept_embeddings_adr.npy"
@@ -63,6 +68,10 @@ st.markdown(
       [data-testid="stMarkdownContainer"] p { color:#B5CAD8; }
       [data-testid="stCaptionContainer"] { color:#94B2C4; }
       .brandline { display:flex; align-items:center; gap:12px; margin-bottom:1.5rem; }
+      .brand-logo {
+        width:54px;height:54px;object-fit:contain;display:block;flex:0 0 54px;
+        filter:drop-shadow(0 5px 18px rgba(16,191,192,.10));
+      }
       .brandmark {
         width:42px;height:42px;border-radius:14px;
         background:linear-gradient(145deg,#18D0CE,#078E97);color:#041A2A;
@@ -393,8 +402,19 @@ def render_metric(label: str, value: str, note: str) -> None:
 # -----------------------------------------------------------------------------
 # Header / hero
 # -----------------------------------------------------------------------------
+# Use the custom MedPhrase monogram when the logo asset is present. The small
+# text-based mark is retained as a graceful fallback for development setups.
+if LOGO_PATH.exists():
+    logo_data = base64.b64encode(LOGO_PATH.read_bytes()).decode("ascii")
+    brand_icon_html = (
+        f'<img class="brand-logo" src="data:image/png;base64,{logo_data}" '
+        'alt="MedPhrase logo" />'
+    )
+else:
+    brand_icon_html = '<div class="brandmark" aria-label="MedPhrase logo">MP</div>'
+
 st.markdown(
-    '<div class="brandline"><div class="brandmark">MP</div><div>'
+    f'<div class="brandline">{brand_icon_html}<div>'
     '<div class="brandname">MedPhrase</div>'
     '<div class="branddesc">Patient-language NLP</div></div></div>',
     unsafe_allow_html=True,
