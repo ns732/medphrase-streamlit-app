@@ -6,6 +6,9 @@ A polished Streamlit research demo for the MAAI 902 NLP Solution Design project,
 
 ## Interface
 
+The interface uses a dark navy and teal theme: deep navy backgrounds (`#061A2B`), dark blue panels (`#08283B`), bright teal accents (`#10BFC0`), and soft white text (`#EAF5F7`). The Streamlit theme is configured in `.streamlit/config.toml`, with complementary custom CSS in `app.py`.
+
+
 - Patient-style text input with fictional example prompts
 - BioBERT-extracted phrases and character offsets
 - SapBERT top-five concept ranking with SNOMED CT IDs
