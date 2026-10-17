@@ -1,12 +1,21 @@
+# Python cache and virtual environments
 __pycache__/
 *.py[cod]
 .venv/
 venv/
-.env
-.streamlit/secrets.toml
-assets/biobert/
-*.zip
 
-# Exported normalization vocabulary/embeddings are kept on private Hugging Face Hub
-assets/*.csv
-assets/*.npy
+# Local/private model artifacts and normalization assets
+assets/biobert/
+assets/candidate_adr_table.csv
+assets/concept_embeddings_adr.npy
+medphrase_streamlit_export.zip
+medphrase_streamlit_export/
+
+# Local secrets and tokens
+.streamlit/secrets.toml
+.env
+.env.*
+
+# Local outputs
+*.log
+.DS_Store
