@@ -384,16 +384,74 @@ def normalize_phrase(
     return ranked
 
 
-def analyze_text(text: str) -> tuple[list[dict[str, Any]], int]:
+def choose_normalization_input(text: str, start: int, end: int, strategy: str) -> str:
+    """Choose the text sent to SapBERT without changing BioBERT's extracted span."""
+    phrase = text[int(start):int(end)]
+    if strategy == "Phrase only (recommended baseline)":
+        return phrase
+
+    sentence_match = None
+    for match in re.finditer(r"[^.!?\n]+(?:[.!?]+|$)", text):
+        if match.start() <= int(start) and int(end) <= match.end():
+            sentence_match = match
+            break
+
+    if sentence_match is None:
+        left = max(0, int(start) - 100)
+        right = min(len(text), int(end) + 100)
+        raw_sentence = text[left:right]
+        leading = len(raw_sentence) - len(raw_sentence.lstrip())
+        sentence = raw_sentence.strip()
+        sentence_start = left + leading
+    else:
+        raw_sentence = sentence_match.group(0)
+        leading = len(raw_sentence) - len(raw_sentence.lstrip())
+        sentence = raw_sentence.strip()
+        sentence_start = sentence_match.start() + leading
+
+    if strategy == "Full sentence (experimental)":
+        return sentence or phrase
+
+    if strategy == "Phrase + nearby words (experimental)":
+        tokens = list(re.finditer(r"\S+", sentence))
+        local_start = int(start) - sentence_start
+        local_end = int(end) - sentence_start
+        overlapping = [
+            i for i, token in enumerate(tokens)
+            if token.start() < local_end and token.end() > local_start
+        ]
+        if not overlapping:
+            return phrase
+        left_index = max(0, overlapping[0] - 3)
+        right_index = min(len(tokens) - 1, overlapping[-1] + 3)
+        return sentence[tokens[left_index].start():tokens[right_index].end()].strip() or phrase
+
+    # Safe fallback if an unknown strategy label reaches this function.
+    return phrase
+
+
+def analyze_text(
+    text: str,
+    normalization_strategy: str = "Phrase only (recommended baseline)",
+) -> tuple[list[dict[str, Any]], int]:
     bio_tokenizer, bio_model, sap_tokenizer, sap_model, candidates, concept_matrix, device = load_models()
+    # BioBERT extraction is identical across normalization strategies.
     mentions = extract_adr_mentions(text, bio_tokenizer, bio_model, device)
     results: list[dict[str, Any]] = []
     for item in mentions:
+        normalization_input = choose_normalization_input(
+            text, item["start"], item["end"], normalization_strategy
+        )
         ranked = normalize_phrase(
-            item["mention"], sap_tokenizer, sap_model,
+            normalization_input, sap_tokenizer, sap_model,
             candidates, concept_matrix, device, top_k=5
         )
-        results.append({**item, "ranked_concepts": ranked})
+        results.append({
+            **item,
+            "normalization_input": normalization_input,
+            "normalization_strategy": normalization_strategy,
+            "ranked_concepts": ranked,
+        })
     return results, len(candidates)
 
 
@@ -607,6 +665,20 @@ with left:
         label_visibility="visible",
         help="Use fictional text only. Do not enter identifiable patient information.",
     )
+    normalization_strategy = st.selectbox(
+        "SapBERT normalization input",
+        options=[
+            "Phrase only (recommended baseline)",
+            "Phrase + nearby words (experimental)",
+            "Full sentence (experimental)",
+        ],
+        index=0,
+        help=(
+            "BioBERT extraction stays unchanged. This setting controls only the text sent to SapBERT. "
+            "Validation experiments found phrase-only performed best overall; context options are exploratory, "
+            "so compare outputs rather than assuming longer text is better."
+        ),
+    )
     run_col, clear_col = st.columns([1, 0.6], gap="small")
     def clear_text_state() -> None:
         st.session_state["patient_text"] = ""
@@ -625,10 +697,11 @@ with left:
         else:
             try:
                 with st.spinner("Loading the research models and analyzing text… first run may take a few minutes."):
-                    output, candidate_count = analyze_text(patient_text.strip())
+                    output, candidate_count = analyze_text(patient_text.strip(), normalization_strategy)
                 st.session_state["analysis_results"] = output
                 st.session_state["analysis_candidate_count"] = candidate_count
                 st.session_state["analysis_source_text"] = patient_text.strip()
+                st.session_state["analysis_strategy"] = normalization_strategy
                 st.success("Analysis complete.")
             except Exception as exc:
                 st.error("The analysis could not run yet. Check the setup details below.")
@@ -647,7 +720,7 @@ with right:
         st.markdown("**01 — Extract**")
         st.caption("BioBERT predicts adverse-reaction spans and their character offsets.")
         st.markdown("**02 — Represent**")
-        st.caption("SapBERT encodes each extracted phrase using CLS pooling.")
+        st.caption("SapBERT ranks concepts using the extracted phrase or an optional context-expanded input.")
         st.markdown("**03 — Rank**")
         st.caption("Cosine similarity orders candidate SNOMED CT concepts from most to less similar.")
     st.markdown(
@@ -679,6 +752,8 @@ else:
     results = st.session_state["analysis_results"]
     source_text = st.session_state.get("analysis_source_text", "")
     candidate_count = st.session_state.get("analysis_candidate_count", 0)
+    used_strategy = st.session_state.get("analysis_strategy", "Phrase only (recommended baseline)")
+    st.caption(f"SapBERT input strategy used: {used_strategy}")
     metrics = st.columns(3, gap="medium")
     with metrics[0]:
         render_metric("Candidate spans", str(len(results)), "Predicted by BioBERT")
@@ -706,6 +781,7 @@ else:
                     unsafe_allow_html=True,
                 )
             with st.expander(f"View top-five ranking for “{result['mention']}”"):
+                st.caption(f"Text sent to SapBERT: {result.get('normalization_input', result['mention'])}")
                 rank_df = pd.DataFrame([
                     {
                         "Rank": i,
@@ -731,6 +807,8 @@ else:
                         "mention": result["mention"],
                         "start": result["start"],
                         "end": result["end"],
+                        "normalization_strategy": result.get("normalization_strategy", "Phrase only (recommended baseline)"),
+                        "normalization_input": result.get("normalization_input", result["mention"]),
                         "rank": rank,
                         "snomed_id": concept["snomed_id"],
                         "snomed_name": concept["snomed_name"],
