@@ -6,7 +6,7 @@ A polished Streamlit research demo for the MAAI 902 NLP Solution Design project,
 
 ## Interface
 
-The interface uses a dark navy and teal theme: deep navy backgrounds (`#061A2B`), dark blue panels (`#08283B`), bright teal accents (`#10BFC0`), and soft white text (`#EAF5F7`). The Streamlit theme is configured in `.streamlit/config.toml`, with complementary custom CSS in `app.py`.
+The interface uses a dark navy and teal theme: deep navy backgrounds (`#061A2B`), dark blue panels (`#08283B`), bright teal accents (`#10BFC0`), and soft white text (`#EAF5F7`). The Streamlit theme is configured in `.streamlit/config.toml`, with complementary custom CSS in `app.py`. A custom MedPhrase monogram is supplied as `assets/medphrase_logo.png`; the app also supports placing the same image as `medphrase_logo.png` in the repository root for convenient GitHub uploads.
 
 
 - Patient-style text input with fictional example prompts
@@ -15,14 +15,21 @@ The interface uses a dark navy and teal theme: deep navy backgrounds (`#061A2B`)
 - CSV download of ranked results
 - The application does not deliberately write submitted text to a database or application-managed log. Hosting providers may have their own operational logs; use fictional examples and do not enter identifiable patient information.
 
+## Optional voice features
+
+- **Patient speech to text:** The app can record a short statement with Streamlit's microphone widget and transcribe it using the `SpeechRecognition` package's Google Web Speech recognition endpoint. This requires an internet connection and may be rate-limited or unavailable. English variants are offered because the ADR model and benchmark are English-language. The user must check a consent box before transcription is submitted to the external recognition service. The recording is also sent to the Streamlit-hosted app as part of its microphone widget. Use fictional, non-identifying examples only; do not record real patient information.
+- **Optional read-aloud:** After an analysis, a doctor can expand the read-aloud section and choose to play either the patient statement or a cautious summary of model suggestions. Playback does not start automatically. The browser/device's built-in `SpeechSynthesis` voice is used; support and voice quality depend on the browser/device.
+- Speech transcription is a convenience feature, not a validated medical transcription service. Review the recognized text before running the NLP pipeline. The model is not a clinical decision-support system.
+
 ## Project files
 
 ```text
 app.py                         # Streamlit interface + inference pipeline
 requirements.txt               # Python dependencies
 .streamlit/config.toml         # Theme settings
-assets/                        # Candidate vocabulary and embeddings (add from Colab)
-colab_export_assets.py         # Run in the existing Colab notebook to export assets
+assets/medphrase_logo.png      # Custom MedPhrase monogram
+assets/                        # Optional local normalization assets (not public in GitHub)
+colab_export_assets.py         # Run in the existing Colab notebook to export model assets
 ```
 
 ## 1. Export assets from the existing Colab notebook
@@ -76,7 +83,7 @@ If using local BioBERT files, extract the exported `biobert/` directory to `asse
 ## 5. Deploy to Streamlit Community Cloud
 
 1. Create a GitHub repository for the app code. Make sure the required license permits public sharing of the code and any included terminology assets.
-2. Add `app.py`, `requirements.txt`, `.streamlit/config.toml`, `README.md`, and `.gitignore`. Do not add the model files or normalization assets to public GitHub.
+2. Add `app.py`, `requirements.txt`, `.streamlit/config.toml`, `README.md`, and `.gitignore`. Add the small `medphrase_logo.png` file to the repository root (or to `assets/medphrase_logo.png`) so the header can display it. Do not add the model files or normalization assets to public GitHub.
 3. Do not commit `assets/biobert/`, raw CADEC data, `candidate_adr_table.csv`, `concept_embeddings_adr.npy`, or access tokens.
 4. Go to [Streamlit Community Cloud](https://share.streamlit.io/) and sign in with GitHub.
 5. Select **Create app**, choose your repository and branch, and set the main file path to `app.py`.
