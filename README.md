@@ -12,8 +12,16 @@ The interface uses a dark navy and teal theme: deep navy backgrounds (`#061A2B`)
 - Patient-style text input with fictional example prompts
 - BioBERT-extracted phrases and character offsets
 - SapBERT top-five concept ranking with SNOMED CT IDs
-- CSV download of ranked results
+- Three selectable SapBERT input strategies: exact extracted phrase (original baseline), phrase with nearby context, or the sentence containing the phrase. These are input strategies for the same SapBERT model, not different models. The original phrase-only setting remains the default until context strategies are validated.
+- CSV download of ranked results, including the normalization input used
 - The application does not deliberately write submitted text to a database or application-managed log. Hosting providers may have their own operational logs; use fictional examples and do not enter identifiable patient information.
+
+
+## SapBERT input-strategy experiment
+
+The interface offers three **input strategies for the same SapBERT model**: extracted phrase only (default), phrase plus up to three neighboring whitespace-delimited tokens on each side within the sentence, and the full sentence containing the phrase. BioBERT extraction is unchanged across strategies. The interface displays the exact text sent to SapBERT and includes it in the CSV export.
+
+In an exploratory validation comparison on 229 examples from the *new phrase + known concept* group, phrase-only ranked best overall (Accuracy@1 0.5371, Recall@5 0.8035, MRR 0.6580); phrase + nearby words scored 0.2751, 0.5284, 0.3963; full sentence scored 0.1659, 0.3755, 0.2667. For the illustrative phrase “waking up,” providing the sentence “I keep waking up during the night.” ranked “Frequent night waking” first, whereas phrase-only ranked “Always sleepy” first. This single-example improvement does not outweigh the lower aggregate validation metrics. Accordingly, phrase-only remains the recommended default, and both context strategies are marked experimental. These validation figures are exploratory and must not replace the original held-out test results.
 
 ## Optional voice features
 
@@ -100,3 +108,9 @@ Streamlit Community Cloud provides a fixed `streamlit.app` URL, but apps sleep a
 - The candidate concept vocabulary is restricted to concepts built from the training split in the experiment.
 - Original evaluation figures should be reported from the Colab notebook outputs, not recalculated from demo examples.
 - The demo uses a general-purpose research pipeline; it has not been clinically validated.
+
+## Experimental context-aware normalization
+
+The app allows a user to select the text supplied to SapBERT while keeping BioBERT extraction unchanged. In order, the strategies are: (1) the exact extracted phrase, (2) the phrase plus up to three whitespace-delimited tokens on either side, and (3) the sentence containing the phrase. The phrase-only option reproduces the original app behavior and is the default. The broader-context options are exploratory and should not be described as improvements unless evaluation on the validation split supports them. Use the supplied `colab_context_normalization_experiment.py` by copying it into a new cell in the existing Colab notebook to compare the strategies on validation examples whose phrases are unseen in training but whose concepts are included in the training-derived candidate vocabulary. Keep the held-out test set untouched during method selection.
+
+These options are not separate models: all use the same pretrained SapBERT encoder and saved candidate concept embeddings; only the text sent to SapBERT changes.
