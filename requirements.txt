@@ -5,3 +5,4 @@ safetensors>=0.4.5
 numpy>=1.26,<3.0
 pandas>=2.2,<3.0
 huggingface_hub>=0.28
+SpeechRecognition>=3.14.0,<4.0
