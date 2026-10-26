@@ -1,3 +1,4 @@
+joblib
 streamlit>=1.43,<2.0
 transformers>=4.45,<5.0
 torch>=2.6,<3.0
