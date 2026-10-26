@@ -1,0 +1,2679 @@
+mention,snomed_id
+bit drowsy,271782001
+little blurred vision,246636008
+gastric problems,162076009
+arthrotec,3384011000036100
+arthritis,3723001
+pains,22253000
+feel a bit weird,367391008
+hunger pangs,162043005
+hip pain,49218002
+vaginal bleeding,289530006
+stomach pain,271681002
+canker sores,426965005
+headache,25064002
+pain,22253000
+shortness of breath,267036007
+depression,35489007
+cramping,55300003
+upset stomache,162059005
+i can't stand or walk for any lengths of time,8510008
+diarrhea,62315008
+constipation,14760008
+fatigue,84229001
+the heel i couldn't walk on very well,228158008
+severe osteoarthritis in the hands,22193007
+severe osteoarthritis in the knees,239873007
+body swelling,300888008
+swelling face,278528006
+swelling wrists,298941006
+swelling abdomen,60728008
+swelling thighs,449614009
+insomina,193462001
+"""empty stomach"" feeling",225014007
+loose stools,398032003
+rectal bleed,12063002
+extremely sick,213257006
+abdominal pain,21522001
+dizzieness,404640003
+blood clots in urine,34436003
+urine leaking,165232002
+upset stomach,162059005
+throw up,422400008
+pain in my stomach,21522001
+deep constant pain,426206001
+swelling,65124004
+little gas,267052005
+extreme stomach pain,21522001
+"uterine, cramps (menopausal for 20 years)",29542008
+pain in the ovaries (menopausal for 20 years),279028009
+pressure in the stomach,13543005
+couldn't urinate,267064002
+severe stomach pain,21522001
+constant burping,271834000
+stomach cramps,51197009
+gassy,162076009
+arthritis pain,57676002
+affecting my stomach(acid reflux),698065002
+affecting my kidneys,236423003
+appetite increase,72405004
+stomach feels empty all the time,225014007
+dizziness,404640003
+dizzines,404640003
+dioreah,62315008
+disorientation,62476001
+ulceration of stomach,397825006
+ulceration of the osophragus,30811009
+infections of the blader,236620008
+feeling depressed,272022009
+feeling exausted,84229001
+pain with stomach cramps,51197009
+diarrhoa,62315008
+heavy menstral bleeding with clots even though i had just finished my cycle a week before,386692008
+couldnt pass urine,267064002
+urine full of blood,34436003
+felt very weak,13791008
+could not stop shaking,26079004
+bleeding,131148009
+threw up,422400008
+gas,162076009
+headaches,25064002
+muscles in my left leg locked up,449917004
+5-6 times at night to pee; normally 1 or 2,162116003
+stomack pains,271681002
+vomited,422400008
+nausea,422587007
+knee pain,30989003
+osteoarthritis,396275006
+sick,39104002
+stomach gas and intense pain,45979003
+gastrointestinal cramping,162076009
+pain pain pain,22253000
+tums,2531000168109
+post traumaic osteoarthritis,699262001
+limp,16973004
+swelling of the legs,275319005
+arthritis strength tylenol,3384011000036100
+tylenol 3,3080011000036109
+couldn't sleep,248255005
+no concentration,60032008
+arthrotec 50,3384011000036100
+arthritic pain,57676002
+heavy menstrual bleeding,386692008
+cramps,55300003
+stomach queasy,422587007
+celebrex 200mg,6496011000036105
+meloxicam,21678011000036102
+oa,396275006
+menopausal,289903006
+celebrex,4171011000036100
+ra,69896004
+caffeine,69867011000036102
+irregular bowel,444702007
+severe headaches,25064002
+loose stool,398032003
+muscle spasms in leg,449917004
+spasms in left arm,45352006
+athritic pain,57676002
+hungry feeling,162043005
+lower back pain,279039007
+pain severe,76948002
+acid reflux,698065002
+acidic bile in my mouth,698065002
+blood pressure slightly elevated,24184005
+acute shoulder tendonitis,202852009
+inflammation,128139000
+pain in major joints,57676002
+elevated blood pressure,38341003
+heart palpitations,80313002
+dizzy,404640003
+extreme gas in stomach and intestines,162076009
+acid reflux-type symptoms,698065002
+reflux,47268002
+stomach irritation,162059005
+pulled my lower back,300956001
+arthrotec 75,3384011000036100
+bloating,248490000
+nauseous,422587007
+hunger,55350005
+stomach is still sore,271681002
+muscular pains,68962001
+labor pain,247412007
+paracetamol,21433011000036107
+ibuprofen,21885011000036105
+heavy vaginal bleeding,315224006
+serious pain,76948002
+bleeding from the vagina,289530006
+diclofenac and misoprostol,21809011000036108
+slightly heavier menstrual cycle,386692008
+stomach issues,300306001
+highly immobile,102491009
+constant pain,426206001
+chronic arthritic type issues,274135002
+lower pelvic pain,30473006
+uterus contractions,29542008
+bloody vagina,289530006
+gastric pain,162076009
+something wrong with my uterus,289621007
+major menstrual cramps,431416001
+sickness,39104002
+puking,422400008
+severe abdominal cramping,51197009
+sweating,415690000
+period cramps,431416001
+dry mouth,87715008
+migraine,37796009
+excessive cramping,55300003
+tired,224960004
+severe vaginal cramps,79012001
+sore knee,30989003
+knee inflammation,298170003
+loss of apetite,79890006
+arthotec,3384011000036100
+back pain,161891005
+pain really bad,76948002
+anxiety,48694002
+bleeding inside,131148009
+cramp,55300003
+'scared' feeling,1402001
+menopause,289903006
+joint pain,57676002
+endometriosis,129103003
+adenomyosis,76376003
+impairment in blood clotting,64779008
+eds,398114001
+cymbalta,35918011000036106
+extreme itching on legs and arms,418290006
+mobility has decreased,82971005
+muscle pain,68962001
+co-codamol,21286011000036106
+"clotting, and horrible periods",386692008
+bleeding has not subsided,131148009
+heavy/extra vaginal bleeding,315224006
+bleeding problem,131148009
+bleeding constantly,131148009
+extra pains,22253000
+extreme tiredness,84229001
+heartburn in back of throat,16331000
+severe lower abdominal pain/cramping,54586004
+very irritable,55929007
+pms symptoms,82639001
+misoprostol,21520011000036107
+gerd,162076009
+bruises,125667009
+could not open my hands,284146005
+could not walk,228158008
+vomiting,422400008
+loose bowels,398032003
+excessive hot flashes,238810007
+night sweats,42984000
+blurred vision,246636008
+irritability,55929007
+chest discomfort,279084009
+elbow pain,74323005
+vitamin c crystals,77435011000036104
+migrains,37796009
+menstruating with heavy bleeding every 11 days,266601003
+horrific cramps,55300003
+"stomach trouble, or cramps",51197009
+ulcer,429040005
+stomach trouble,300306001
+kidney damage,90708001
+liver damage,235856003
+stomach pains,271681002
+chest pains,29857009
+erratic heart beat,361138002
+raised blood pressure,24184005
+aciphex,21296011000036107
+heart burn,16331000
+indigestion,162031009
+period like cramps,29542008
+elevated heart rate,6285003
+hot flashes,238810007
+sever stomach cramps,51197009
+weakness in my legs,309774006
+severe cramping,55300003
+increased menstrual blood flow,161722004
+urinary incontinence,165232002
+heel spurs,55260003
+bad gas,162076009
+severe diarrhea,62315008
+""" fluey"" feelings in upper arms, legs",95891005
+artrotec,3384011000036100
+fluey feelings,95891005
+naseua,422587007
+dry eyes,162290004
+loss of appetite,79890006
+hunger feeling,55350005
+stomach cramping,51197009
+muscle cramps in my calf muscles,250084002
+charlie horses,54981004
+walking up the stairs was intolerable,165247006
+shoulder pain,45326000
+severe nausea,422587007
+stiffness in my hands,249915009
+very little mobility in my right hand,284149003
+extreme pain,76948002
+heavy bleeding,131148009
+bad back,33308003
+knew pain,22253000
+bad cramps,45352006
+feeling sick,213257006
+spotting,9126005
+spotting problems,9126005
+cycle was back (i'm menopausal ),76742009
+breast pain,53430007
+erithema,247441003
+skin is so dry,16386004
+sweating a lot,52613005
+pruritus ani,90446007
+first vaginal bleeding,289530006
+pruritus,418363000
+skin was all red,444827008
+infections,40733004
+slight nausea,422587007
+abdominal cramps and pain,9991008
+abdominal gas,162076009
+abdominal cramps,9991008
+abdominal discomfort,43364001
+tylenol,3080011000036109
+jaundins,18165001
+diahrea,62315008
+sweats,224962007
+light nausea,422587007
+pain unbearable,67849003
+spinal pain,48926009
+naprosyn,15611000168108
+severe sudden onset headache in the back of head,25064002
+bp was extrememly high,69791001
+pulse was high,86651002
+clonidine,21589011000036108
+high bp,69791001
+pulse is still extremely high,86651002
+tachycardia,3424008
+severe acid reflux,698065002
+severe uterine cramping,29542008
+severe colon cramping,9991008
+cold sweat,83547004
+fainting,271594007
+frequent menstral periods,52754008
+post-menopausal and have now had a six day period,76742009
+tender breasts,55222007
+increased appetite,72405004
+empty stomach feeling,225014007
+glucoasamine,69813011000036107
+tylenol 8,3080011000036109
+stomach ache,271681002
+water retention,43498006
+throbbing headache,162308004
+elevated my blood glucose levels,166892002
+vasotec,21317011000036101
+glyburide,21911011000036104
+avandia,3736011000036100
+stool was black,35064005
+blood in my stool,405729008
+starting to upset my stomach,271681002
+can't sleep,193462001
+constant soreness in abdomen,21522001
+general stomach upset feeling,162076009
+heartburn,16331000
+trembling,267079009
+menstrual cramps,431416001
+severe menstual pain,266599000
+abdominal pains,21522001
+severe welts,247472004
+swelling of throat,102617004
+rapid heart beat,3424008
+faintness,271594007
+massive gas cramps,45979003
+bathroom with the runs,62315008
+heart attack,22298006
+stroke,230690007
+thumb pain,300955002
+stomach hurt soooo bad,271681002
+thumbs hurt so bad,300955002
+flatulence,267052005
+coccyx pain,34789001
+urine is bloody,34436003
+it hurts,22253000
+little vaginal bleeding in spite of being menopausal for 10 years,76742009
+estrace,21238011000036103
+vomitting,422400008
+very painful joints,57676002
+extreme nausea,422587007
+pain in my hip,49218002
+aches and pains,82991003
+extended bleeding during menstruation,248966006
+heavy menstral cycles,386692008
+diarrhoea,62315008
+swelling feet,297142003
+ankles swelling,26237000
+wrong with my liver,235856003
+blood pressure had gone sky high,24184005
+fluid retention,43498006
+queasiness,422587007
+gas pains,271832001
+pain is severe,76948002
+bleeding problems,131148009
+burning my esophagus,21005005
+dry heaves,84480002
+vomit,422400008
+burning sensation,90673000
+cambia,21288011000036105
+maxalt,83225011000036106
+migraines,37796009
+worse migraines,37796009
+rectal bleeding,12063002
+collitis,64226004
+gi distress,162076009
+cataflam,21288011000036105
+mypaid forte,177241000036105
+ibuprofen 400 mg,21885011000036105
+paracetamol 325 mg,21433011000036107
+gass,162076009
+drowsiness,271782001
+aches,22253000
+stevens johnson syndrome,73442001
+lower gut pain,54586004
+diahrrea,62315008
+gastrointestinal problems,162076009
+celebrx,4171011000036100
+slight effect on my blood pressure,129899009
+sun sensitivity,258155009
+ibu,21885011000036105
+gassy abdominal cramping,162076009
+demerol,34839011000036106
+heart attacks,22298006
+strokes,230690007
+lower lumbar arthritis,699302001
+dysmennorhea,266599000
+severe pain,76948002
+swelling of the legs and feet,275319005
+high blood pressure,69791001
+bladder infection,236620008
+bladder not to empty as it should,267064002
+aleve,53458011000036102
+vaginal skin burns,445178008
+cuts on my hands,283416005
+excessive drowsiness,271782001
+foot was hurting,47933007
+hobbling,228158008
+stomach upset,162059005
+perforated ulcer,9829001
+peritonitis,48661000
+septicaemia,10001005
+renal failure,42399005
+renal and respiratory failure,409622000
+pain in my right heel,2733002
+plantar fasciitis,202882003
+puffiness,65124004
+calf of left leg began to burn,36349006
+tinnitis,60862001
+cannot get to sleep on my own,59050008
+torn maniscus,239720000
+lipitor,3877011000036101
+myocardial infarction,22298006
+skin rash,271807003
+itch,418290006
+cant sleep,193462001
+memory fog,386807006
+low libido,8357008
+atorvastatin generic,21343011000036103
+brain fog,419723007
+alleve,53458011000036102
+inflamation,128139000
+pain in shoulder,45326000
+pain in elbow,74323005
+pain in knee,30989003
+left shoulder is terribly painful,45326000
+high cholesterol,124054003
+senile,271873000
+move slow,249898006
+eye heavy,78860006
+no sleep,248255005
+paranoia,48500005
+muscle aches,68962001
+fibromyalgia,24693007
+learning problems,50829006
+numbness,44077006
+eyes running,420103007
+itchy,418290006
+watery,420103007
+crying,304534000
+itching,418290006
+omega 3 fish oil,931804011000036107
+norvasc,4216011000036104
+diovan,53523011000036100
+amlodiphine,21322011000036108
+q10,77424011000036100
+omega iii,931804011000036107
+vitamin e (200iu),77461011000036109
+metal moods,286641001
+anzity,48694002
+stomach ulcer,397825006
+memory trouble,386807006
+kidney troubles,90708001
+stomach ulcers,397825006
+leg muscle discomfort,68962001
+i feel like i've been run over by a truck,102480002
+achiness,22253000
+sore,68962001
+muscle aches in my neck,81680005
+muscle aches in my shoulders,45326000
+muscle aches in my lower back,279039007
+extremely fatigued,13791008
+i feel like i'm in a fog,419723007
+it's a chore to just walk around,228158008
+neuropathy,386033004
+loss of energy,248274002
+difficulty speaking,47004009
+difficulty thinking,247640008
+disturbed sleep patterns,26677001
+difficulty urinating,267064002
+increase in blood pressure,24184005
+lack of sexual desire,248096004
+less muscle mass,88092000
+decreased energy,248274002
+constant lethargy,214264003
+debilitating,13791008
+vitamin c,77435011000036104
+fish oil capsules,77436011000036106
+co q 10,77424011000036100
+vit. b complex,76000011000036107
+pain in muscles,68962001
+pain in my joints,57676002
+hair loss,278040002
+insomnia,193462001
+tinnitus,60862001
+dysphagia,40739000
+ms,24700007
+feet hurt,47933007
+coma,371632003
+zocor,3904011000036106
+lipitor's,3877011000036101
+crestor,4031011000036106
+diabetics,73211009
+frozen shoulder,399114005
+chest pain,29857009
+cardio event,22298006
+damaging my muscles,129565002
+elevated lipids,124042003
+muscle soreness,68962001
+tore a calf muscle,262966007
+coronary disease,56265001
+increased belching,59976005
+stomach discomfort,271681002
+leg heaviness,161873000
+low bp,271870002
+flu,6142004
+fever,386661006
+toprol,32970011000036103
+sciatica,23056005
+tingling,62507009
+numb,44077006
+can barely walk,228158008
+body aches,82991003
+decreased mobility,8510008
+decreased testosterone,131078003
+decreased libido,8357008
+difficulty getting out of bed in the morning,301679006
+tingling hands,309086004
+itchy hands,418290006
+decrease in overall strength,26544005
+strength decrease dramatically,26544005
+testosterone,21290011000036100
+torn miniscus,239720000
+torn acl,239725005
+fish oil,77436011000036106
+vitimin c,77435011000036104
+leg cramps,449917004
+spinning head,399153001
+ringing in the ears,60862001
+fatigued,84229001
+felt lazy,26413003
+unmotivated,26413003
+laziness,277521002
+mood swings,18963009
+rage,61372001
+extremely tired,224960004
+changes in mood,18963009
+changes in physical activity,6389006
+muscle tightness,56731001
+lower back weakness,249938007
+body stiffed during sleep,271587009
+general body stiffness,271587009
+mood changes,18963009
+hardly lift my arms,288335007
+hardly walk,228158008
+muscle wasting,88092000
+burning,90673000
+knotting muscles,55300003
+stiff neck,161882006
+sore left testicle,63901009
+arm muscles melting,88092000
+legs feel like they don't belong to me,40806005
+joint pains,57676002
+dysfunctional bowel,235594008
+no energy,248274002
+ubiquinol,77424011000036100
+musclo-skeletal pain,279069000
+syncope,271594007
+atorvastatin,21343011000036103
+anxious,48694002
+words would not form,286387000
+fear,1402001
+emotional changes,18963009
+ill feeling,367391008
+paranoid,48500005
+cholesterol was very high,166830008
+could not sleep,248255005
+could not eat,288885009
+belly blew up,271835004
+stage 1 diastolic dysfunction,3545003
+right ventricular was mildly dilated,253522006
+elevated calcium,166702002
+diastolic dysfunction,3545003
+coronary artery disease,53741008
+diabetic,73211009
+altered my heart function,105981003
+inflammed bursae,84017003
+inflammed ligaments,443120002
+nerve pain,16269008
+burning of ankles,90673000
+burning of shoulders,90673000
+liptor,3877011000036101
+shoulders hurt,45326000
+disability,21134002
+coq10,77424011000036100
+elevated cholesterol,166830008
+difficulty with digestive system,308925008
+pain in neck,81680005
+unable to raise my left arm,284140004
+unable to move,225601007
+cannot sleep,301345002
+chest spasm,281245003
+pneumonia,233604007
+spasms,45352006
+muscle weakness,26544005
+muscle cramping,55300003
+muscle spasms,55300003
+lipitol,3877011000036101
+sore leg joints,267953003
+ache,22253000
+calf muscle strains,285395009
+muscle strain,48532005
+severe muscle pull/strain,48532005
+calf pain,300954003
+pulled/strained calf,285395009
+muscle pull,48532005
+servere pain,76948002
+stomache aches,271681002
+unable to sleep,248255005
+"absent mindendness,",46991000
+trouble concentrating,26329005
+eye problems,371405004
+rash,271807003
+difficulty breathing,230145002
+weight increased,262286000
+bloating of stomach,116289008
+rashes,271807003
+tightness of throat,247323005
+choking,249489001
+pravachol,3848011000036104
+muscles have diminished,88092000
+aggitated,24199005
+easily excited,58901008
+lightheadedness,386705008
+excess gas,162076009
+mild stiffness of my fingers,249915009
+tired all the time,267032009
+memory loss,48167000
+mental illness,74732009
+hallucinations,7011001
+dizzy spells,404640003
+hairloss,278040002
+arm stiffness,225610004
+neurological problems,80690008
+major stiffness in shoulder,249918006
+tiredness,267031002
+sore,22253000
+painful,22253000
+can hardly sleep,228158008
+tingly,62507009
+muscle ache,68962001
+make me so tired,224960004
+stabbing sharp pains,55145008
+type 2 diabetes,44054006
+heart disease,56265001
+bp problems,38936003
+diabetes,73211009
+heel pain,2733002
+severe myopathy,129565002
+cpk was elevated,166717003
+liver enzymes were very elevated,166643006
+sleeping all day and night,230490003
+exhaustion,60119000
+feel exhausted,314109004
+drained and tired,224960004
+hand being asleep,309086004
+numb-like,44077006
+rapid shallow breathing,248581005
+slightly blurred vision,246636008
+erectile disfunction,397803000
+allergy,473011001
+asthma,195967001
+severe leg cramping,449917004
+advil,53215011000036102
+urinery tract infection,68566005
+urge to urinate constantly,75088002
+fuzzy thinking,247640008
+extremely hyper,44548000
+hyperactive,44548000
+constant alert,248234008
+severe upper body pain,102480002
+tendonitis,21545007
+worse pain,22253000
+joints hurt,57676002
+muscles hurt,68962001
+tendons hurt,21545007
+weakness,13791008
+restlessness in my legs,32914008
+hot/cold fever-like sensations in the skin,103002009
+constant sleepiness,77692006
+chronic fatigue syndrome,52702003
+restless leg syndrome,32914008
+cognitive impairments,386806002
+blurr vision,246636008
+slurpy speach,289195008
+mussle spasm,55300003
+head aches,25064002
+thining hair,278040002
+elbow painful,74323005
+back discomfort,161891005
+trouble sleeping,301345002
+bloated,248490000
+vision problems,63102001
+lysine,77426011000036108
+vitamins e,77461011000036109
+vitamins a,37787011000036104
+lethargic,214264003
+lack of enthusiasm,277521002
+short term memory loss,247592009
+metabolic syndrome,237602007
+high ldl,445445006
+memory problems,386807006
+inability to concentrate,60032008
+feeling weak,13791008
+weak,13791008
+lupus,200936003
+pain in joints,57676002
+pain in bottom of feet,47933007
+calves are sore and tender to the touch,300954003
+decreased libdo,8357008
+eye sight changes,63102001
+muscle aches in chest,68962001
+muscle aches in arms,288227007
+stomach distress,162059005
+gum trouble,18718003
+eye trouble,371405004
+aches and stiffness knees,249913002
+aches and stiffness hips,249914008
+spike in my blood sugar,166892002
+couldn't walk,228158008
+constipated,14760008
+stiffness,271587009
+resting pulse jumped to between 100 and 105,86651002
+lack of energy,248274002
+unexplained sweating,52526003
+resting pulse had jumped to about 120,86651002
+lipiltor,3877011000036101
+leg muscle pain,68962001
+pronounced sweating,52613005
+cholestorol which had jumped from 175 to 220,166830008
+insommnia,193462001
+atrophy,88092000
+tendinitis,34840004
+tendinopathy,68172002
+tendon contracture,274141009
+miniscus damage,111224002
+working memory and short-term memory loss,247592009
+language and learning ability loss including spoken and written aphasia and inability to read,87486003
+gall bladder disease,39621005
+pancreatitis,75694006
+inability to walk,282145008
+cardiovascular disease,49601007
+cannot walk,282145008
+alopecia,56317004
+muscle fatigue,80449002
+sleeplessness,193462001
+facial paralysis,280816001
+stress,73595000
+bell's palsey,193093009
+thoughts of suicide,6471006
+charley horses in calves,54981004
+charley horses in abdomen,54981004
+charley horses in breasts,54981004
+charley horses in shoulders,54981004
+charley horses in sides,54981004
+charley horses in feet,54981004
+charley horses in legs,54981004
+vertigo,399153001
+mini-strokes,230690007
+charley horse in one or both breasts,54981004
+charley horse in my side,54981004
+charley horses in the abdomen,54981004
+ulcerative colitis,64766004
+gastro/ent,162076009
+high cpk level,432352001
+foot pain,47933007
+colitis,64226004
+muscle pains,68962001
+peripheral neuropathy,302226006
+hair is getting very thin,278040002
+gas/wind,162076009
+windy,267052005
+fatique,84229001
+leg cramping,449917004
+pain traveling to my stomach,427475007
+pain traveling to my buddocks,427475007
+urge to urinate,75088002
+elevated liver enzymes,166643006
+fatty liver,197321007
+pain in forearms,444899003
+pain in lower back,279039007
+couldn't climb stairs,282180007
+needed to rest every few minutes,84229001
+abdominal cramping,9991008
+painful inflammed joints,57676002
+painful to walk,426899007
+muscle cramps,55300003
+muscle spasams in face and neck,55300003
+weakness in legs,309774006
+foggy mental state,419723007
+falling over,161898004
+clumsiness,7006003
+nightmares,419145002
+als,86044005
+mnd,37340000
+permanent nerve damage,39400004
+couldn't move shoulders,304297005
+hips hurt,49218002
+loss of sleep,130989002
+loss of range of motion,70733008
+gi difficulties,162076009
+added weight,262286000
+weakened muscle,26544005
+memory difficulties,386807006
+joint stiffness,84445001
+swollen,65124004
+fibromalgia,24693007
+irritable colon,10743008
+vibrating sensation,299933002
+body ached,82991003
+problems with coordination,281016006
+problems with memory,386807006
+painfull,22253000
+diarhea,62315008
+backache,161891005
+runny nose,64531003
+bloat,248490000
+muscle twitching,60238002
+always worrying,79015004
+twitching,249966004
+light head,386705008
+movement restriction,70733008
+tremor,26079004
+memory deficits,386807006
+gum infections,66383009
+vision severe impairment,397541004
+heaviness in eyes,78860006
+eye pain,41652007
+afterpain,22253000
+vision reduced,13164000
+tired most of the time,267032009
+can't get to sleep,59050008
+can't get out of bed,301676004
+no strength,26544005
+loss of breath,267036007
+difficulty walking up stairs,282195009
+aggression,61372001
+hopelessness,307077003
+lonliness,267076002
+self loathing,225508006
+depressed,35489007
+obsessively focused on morbid,162315007
+negative about everything in my life,225473001
+weight gain,8943002
+diaharrea,62315008
+spleen cancer,363499005
+pain in hands,53057004
+pain in back,161891005
+pain in upper legs,78514002
+pain in my arms,102556003
+prednisone 10mg,21496011000036106
+predisone,21496011000036106
+high sugar attack,166892002
+digestion problems,308925008
+pancreas is very swollen,75694006
+pins and needles,62507009
+neck pain,81680005
+truble remembering,386807006
+hand feels like it's not mine,40806005
+"muscle aches,",68962001
+balance problems,387603000
+cold toes and feet,271585001
+circulatory problems,271137009
+cold hands,271584002
+dry throat/hoarseness,50219008
+slurred speech,289195008
+sorgren's syndrome,83901003
+alzheimers,26929004
+severe muscle pain in hip joints,49218002
+fluish feeling,95891005
+muscle achs,68962001
+low energy,248274002
+waking me up at night in pain,36163009
+chronic diarrhea,236071009
+severe joint aches,57676002
+abdominal flu symptoms,267045008
+always feeling tired,60119000
+cramping in back,55300003
+cramping in legs,449917004
+problems concentrating,26329005
+problems sleeping,301345002
+felt like i had the flu,95891005
+irritable,55929007
+nerve damage,57182000
+red spots all over my body,271807003
+slowed speach,82883008
+aphasia,87486003
+shufflihg gait,43005009
+unable to get out of chairs without help,301657001
+ringing in my ears,162352007
+sinus problems,301202006
+spots on my body,285305004
+lost my ability to walk,282145008
+eyes get blury,246636008
+involuntary movements,267078001
+muscles aches,68962001
+difficulty to walk,228158008
+high sleep requirement,77692006
+loss of support in calf musells,309249007
+unable to walk,282145008
+vertigo like attacks,399153001
+loss of any sex drive,8357008
+leg support weak,309774006
+mussel weakness,26544005
+increase in sleep requirement,77692006
+energy loss,248274002
+vertigo like episodes,399153001
+leg pain,10601006
+vertigo like symptons,399153001
+diminished mental acuity,419723007
+in both legs pain,10601006
+in both legs weakness,309774006
+cramped,55300003
+taste perversion,271801002
+suicidal depression,35489007
+weight loss,89362005
+change in personality,102943000
+deppression,35489007
+indegestion,162031009
+stuffy nose,68235000
+plugged ears,103281005
+kidney stone,95570007
+bronchitis,32398004
+cough,49727002
+abdominal hematoma,235999009
+bleeding in my abdomen after coughing and rupturing a blood vessel,444312002
+decreased immune system,38013005
+elevated wbc,165509000
+trouble swallowing,288939007
+hoarse voice,50219008
+decreased sense of taste,36955009
+decreased sense of smell,83156004
+irregular periods,80182007
+abnormal uterine bleeding,19155002
+decreased progesterone production,131053002
+dark urine,39575007
+tooth decay,80967001
+anemia,271737000
+kidney failure,42399005
+auto immune diseases,85828009
+trouble walking,228158008
+eyesight has changed,63102001
+blurry eyesight,246636008
+burning feet,36031001
+painful heels,2733002
+cognitive disfunction,386806002
+difficulty with speech,29164008
+extreme fatigue,13791008
+difficulty walking,228158008
+aching in knees,30989003
+aching in hips,49218002
+aching in toes,285365001
+aching in my fingers,18876004
+very tired,224960004
+pain in my left hip,49218002
+muscle knots up,55300003
+vagueness,248236005
+vagues,248236005
+loss of short term memory,247592009
+jaw pains,274667000
+neck pains,81680005
+low back pains,279039007
+hip pains,49218002
+vytorin,21565011000036108
+lightheaded,386705008
+tennis elbow type pain,202855006
+hypotension,271870002
+fainting spells,271594007
+exercise intolerance,267044007
+excruciating pain,67849003
+unable to sit,282966001
+unable to get out of bed,301676004
+blood in urine,34436003
+chest muscle soreness,281245003
+spazms,45352006
+neurontin,4344011000036106
+muscle problems,129565002
+flu bug,6142004
+pravochol,3848011000036104
+provachol,3848011000036104
+flu like synptoms,95891005
+numbness in my shoulder,298753001
+diarhhea,62315008
+walking with a cane,105504002
+server pain,76948002
+horrible muscle pains,68962001
+horrible back spasms,203095000
+spasms in leg muscles,449917004
+terrible short term memory problems,247592009
+lack of motivation,277521002
+weak and wobbly unbalanced,13791008
+not sure footed as i walked,22631008
+overall weak feeling,13791008
+muscle function irregularities,56273005
+tightness in throat with occasional choking problem,247323005
+loss of endurance,248277009
+heavy legs and arms,373931001
+eye muscle spasms,59026006
+lousy sleeping at night,301345002
+terrible concentration,26329005
+bad dreams nightly,85418005
+always exhausted,60119000
+hip joint pain,49218002
+muscular aches,68962001
+swallowing problems,399122003
+hard to get out of bed in the morning,301676004
+constant muscle tension in legs,250069006
+sadness,420038007
+loss of muscle mass in arms,88092000
+loss of muscle mass in chest,88092000
+simvastatin,21242011000036102
+loss of support in all muscels in particular calf and leg,26544005
+excruciatig pain,67849003
+loss of hair,278040002
+loss of sex drive,8357008
+partial tempoary loss of sight one eye,267728009
+muscel pain,68962001
+cq10,77424011000036100
+fish oils,77436011000036106
+pain was worse,76948002
+unable to reach the top of my head with my hands,284140004
+restricted movement,70733008
+discomfort in my left hand,247347003
+fingers are swollen,299060006
+movement is restricted,70733008
+hands are warm to touch,248422003
+movement is restricted and it is impossible to make a fist,70733008
+ibruprofen gel,70270011000036104
+ibruprofen,21885011000036105
+muscle pain in left arm,288228002
+weak feeling,13791008
+general malaise,367391008
+unable to run,282475008
+felt very unwell,213257006
+hdl dropped,124055002
+every 3 hrs drinking water,249477003
+rhabdomyolosis,240131006
+persistent dry skin spots,16386004
+leg pains,10601006
+short term memory problems,247592009
+severe muscle pains,76948002
+severe pains,76948002
+severe cramps,55300003
+weak muscles,26544005
+poor balance,387603000
+very very tired,224960004
+sleeplesness,193462001
+not being able to get out of bed in the morning,301676004
+muscle stiffness,16046003
+not being able to walk,282145008
+could barely walk,228158008
+extreme headaches,25064002
+sore joints,57676002
+sore muscles,68962001
+fevers,386661006
+chills,43724002
+flu like symptoms,95891005
+swelling of right knee,248491001
+wanted to sleep all of the time,248262001
+sore throat,162397003
+dizzyness,404640003
+loss of coherent thought,247640008
+lethargy,214264003
+blurry vision,246636008
+lopid,3530011000036104
+damage your heart,56265001
+short of breath,267036007
+constantly weak,13791008
+light headed,386705008
+increased blood pressure,24184005
+heart throbbing out of my chest,248657009
+tingling in muscles of upper torso,62507009
+heart attach,22298006
+muscle aching,68962001
+cognitive ability deminished,386806002
+recall was slower,283902008
+not be able to process thoughts,247640008
+not as smart as i use to be,419723007
+muscle weakness in plantar muscle,309774006
+muscle weakness in back,26544005
+muscle weakness in ankle,309774006
+lack of concentration,60032008
+zoloft,3559011000036109
+major depression,370143000
+numbness in arms,298753001
+constant headaches,25064002
+short-term memory loss,247592009
+flu-like symptoms,95891005
+feel like i got hit by a truck,102480002
+stiff upon waking,40144003
+hands hurt,53057004
+can't make a fist,284252000
+fosamax 35,2922011000036103
+higher blood sugars,166892002
+carpal tunnal,57406009
+kidney problems,90708001
+gemfibrosil,21659011000036107
+type ii diabetes became uncontrolled,443694000
+kidney readings became bad,236423003
+pain in my hands,53057004
+could not walk without falling,228158008
+debilitated,13791008
+kidney readings became so high,236423003
+sinus colds,36971009
+pressure pain,22253000
+cant walk,282145008
+heart attact,22298006
+muscels hurts,68962001
+week,13791008
+sick at stomach,162059005
+tired all the time,224960004
+rhuematoid arthritis,69896004
+prednisone,21496011000036106
+enbrel injections,25701000168107
+aching pain in my arms,102556003
+could not sleep well,301345002
+lost all the strength in my muscles,26544005
+could hardly lift a glass,288335007
+very fatigued,84229001
+sleepy,271782001
+food cravings,248132003
+sporadic lower abdominal cramping,51197009
+thigh soreness,78514002
+"good cholesterol is whacked, lowered",124055002
+significant limp,16973004
+live damage,235856003
+can hardly walk,228158008
+stiffness in leg joint,225609009
+stiffness in my feet,225609009
+numbness in my hands,309521004
+dislocating,108367008
+severe urinary tract infections,68566005
+severe infections,40733004
+hemorrhoids,70153002
+muscle problems legs,129565002
+tremendous neck pain,81680005
+short term memory issues,247592009
+weakness in arms,309774006
+permanent muscle damage,129565002
+lipitor 40mg,6206011000036109
+terrible abdominal pain,21522001
+joints aching,57676002
+pravastatin,21606011000036107
+muscle cramping in leg,449917004
+inablity to walk,282145008
+lescol,47401000168109
+memory confusion,40917007
+extreme bloating,116289008
+increase my heart rate,3424008
+drowsy,271782001
+sleep is not very sound,301345002
+pain neck,81680005
+tendonitis,34840004
+b complex,76000011000036107
+stomach upsets,162059005
+head hurting,25064002
+very confused,40917007
+exhausted,60119000
+falling asleep all the time,77692006
+legs always feeling like lead,161873000
+constant pain shoulders,426206001
+whole body hurts,82991003
+parkinsons,49049000
+aching over my entire body,82991003
+severe depression,310497006
+neck muscel problems,129565002
+partial loss of sight,361122008
+sex drive gone,248096004
+c q10,77424011000036100
+legs painful to the touch,10601006
+loss of sexual desire,8357008
+lecithin granules,78584011000036106
+lexapro,3210011000036104
+muscles ached,68962001
+extreme exhaustion,84946008
+hypochondriac,18193002
+intense dizziness,404640003
+intense chills and shivers,43724002
+lassitude,13791008
+calf pains,300954003
+walk a little funny,22325002
+hip hurt,49218002
+productive cough,28743005
+aching muscles,68962001
+aching joints,57676002
+wind,267052005
+blockage of the lad,53741008
+bell's palsy,193093009
+bell's,193093009
+liver problems,235856003
+night muscle cramps,55300003
+deafness,15188001
+chronic rhinitus,86094006
+upper respiratory infections,54150009
+flatulance,267052005
+ability to concentrate,60032008
+shoulder muscle pain,288226003
+neck muscle pain,81680005
+tender joints,110288007
+wrist pain,56608008
+fogginess,419723007
+pravichol,3848011000036104
+gum ulcerations,71262003
+pain in legs,10601006
+pain in arms,102556003
+mild muscle pain,68962001
+tricor,21417011000036105
+mild nausea,422587007
+muscle pain in neck,81680005
+muscle pain in hip,49218002
+muscle pain in shoulders,288226003
+severe muscle spasms in my legs,55300003
+severe myalgia,68962001
+muscle inflammation,26889001
+connective tissue pain,279069000
+rheumatoid arthritis,69896004
+severe legs problems,128605003
+cramps in hands,250082003
+cramps in my feet,102551008
+pain in chest,29857009
+sciatic pain,23056005
+loss of feeling in toes,309087008
+lack of appetite,79890006
+no enthusaism,247753000
+vit c,77435011000036104
+swollen tongue,421262002
+inergy,21565011000036108
+skin itchiness,418363000
+couldn't get out of bed,301679006
+pain in leg,10601006
+hard to walk,228158008
+abnormal dreams,85418005
+hair thinning,278040002
+moody,286641001
+pain in ankles,247373008
+limped,16973004
+ankle hurt,247373008
+could not walk up the stairs,282180007
+weak legs,309774006
+slurred speach,289195008
+loss of balance,282299006
+could'nt talk,286369003
+could'nt concentrate,60032008
+could'nt walk,228158008
+sore legs,10601006
+barely remember anything that has happened recently,386807006
+numbness in both legs,309537005
+joints poping and cracking,2764000
+rapid weight loss,89362005
+pain in my left leg,287047008
+cholesterol went up,166830008
+hypercholesterolemia,13644009
+slight swelling of cheeks,278528006
+facial swelling,278528006
+crying all the time,225460000
+not sleeping,248255005
+bipolar disorder,13746004
+aspirin,21719011000036107
+severe muscle weakness,26544005
+lost 30 pounds,89362005
+little pain,22253000
+couldn't lift my arms or legs,284136008
+muscles deteriorated,88092000
+polymyositis,31384009
+stiff upper leg,225609009
+stiff quad area,225609009
+chest pain left side,29857009
+sore muscle,68962001
+loss of libido,8357008
+lost all sexual desires and thoughts,8357008
+panic attacks,225624000
+muscular pain,68962001
+arrhythmia,698247007
+lipitor 20 mg,6205011000036102
+pain all over my body,82991003
+overall misery,420038007
+attack of restless leg syndrome,32914008
+legs twitching,60238002
+acute muscle pain,68962001
+muscle weariness in legs,80449002
+soreness in shoulder,45326000
+liver readings went up,67251005
+burning of tongue,399044006
+dry throat and mouth,87715008
+couldn't sleep at night,248255005
+very weak,13791008
+shaky,26079004
+decreased eye sight,225581002
+peripheral neuropathy in arms,302226006
+peripheral neuropathy in feet and legs,302226006
+peripheral neuropathy in my hands,302226006
+damaged my liver,235856003
+muscular soreness in arms and shoulders,288227007
+rhabdomyolysis,240131006
+cpk spike,166717003
+muscles stiff,16046003
+muscles slightly sore,68962001
+memory weakened,386807006
+lack of sexual drive,248096004
+muscle inflamation,26889001
+tired lower arms and legs muscel,80449002
+pale/yellow complexion,398979000
+heat stress,52072009
+loss of concentration,60032008
+fell asleep while driving,77692006
+muscel fatigue,80449002
+cold sweats,83547004
+sever heat intolerance,69215007
+extreme moodiness,286641001
+irritibility,55929007
+anger,75408008
+sex drive became non-existant,248096004
+pain on outer sides of thighs,78514002
+swelling in knee,248491001
+swelling in one ankle,267039000
+soreness in shoulders,45326000
+lowering of energy,248274002
+calves tire and burn,300954003
+tired or burning muscles,80449002
+breathlessness,267036007
+blurring vision,246636008
+lipitor 40,6206011000036109
+cramping in my stomach,51197009
+bad muscle pains,68962001
+heart problems,56265001
+cancer,363346000
+cramps in calves,250084002
+intense heart pain,29857009
+restless,162221009
+lack of sleep,130989002
+loss the will to do anything,277521002
+emotional,309838005
+want to give up,247753000
+leg calf cramps,250084002
+wild mood swings,18963009
+sinus congestion,82297005
+diffuculty thinking,247640008
+dosent want to get out of bed,301676004
+no amount of sleep makes me feel rested,77692006
+legs are killing me,10601006
+mind was starting to deteriorate,419723007
+couldnt remember anything,386807006
+blood sugar elevated,166892002
+blood pressure elevated,24184005
+elevated blood sugar,166892002
+feel shaky,271713000
+could hardly walk,228158008
+cholesterol climbed,166830008
+muscles cramp,55300003
+muscles in my lower abdomen started to contract,249544004
+tiredness in leg,80449002
+swollen foot,297142003
+sore arms,102556003
+sore neck,81680005
+weakness in both arms,309774006
+jittery,424196004
+legs ached,10601006
+felt weak,13791008
+calf muscles painful to touch,300954003
+myalgia,68962001
+neuralgia,16269008
+dementia,52448006
+polyneuropathy,42345000
+rhabdomyolisis,240131006
+subdural hematoma,95453001
+ankle pain,247373008
+aching,22253000
+soreness,22253000
+muscle problem,129565002
+had to use a cane to walk,105504002
+ache and discomfort in my legs,10601006
+increased weight gain,262286000
+tingling in extremities,62507009
+chronic fatigue,52702003
+severe arthritis,3723001
+pain in shoulders,45326000
+severe and chronic tendonitis in my elbows,239965002
+tremors,26079004
+slight flush,238810007
+sedation,17971005
+bed wetting,8009008
+rush all over my face,271807003
+painful muscles,68962001
+painful joints,57676002
+arms weak,309774006
+damage to my shoulder joints,444003007
+cannot concentrate,60032008
+get tired vry easily,162076009
+knee hurt,30989003
+crying for no reason,304534000
+high cpk,432352001
+liver blood test mildly elevated,67251005
+burning sensations in shoulders,90673000
+burning sensations in upper chest,90673000
+burning sensations in neck,90673000
+palpatations,80313002
+weak all the time,13791008
+over weight,238131007
+periphiral neuropathy,302226006
+constant twitching,249966004
+muscle aches in my legs,288231001
+severe muscle cramps,55300003
+dehydration,34095006
+dehydrated,34095006
+terrible nightmares,419145002
+arms painful,102556003
+persistent triedness,267032009
+uncharacteristical moodiness,286641001
+light headedness,386705008
+unwarranted depression,35489007
+occasional thoughts of suicide,6471006
+husky vocal chords,50219008
+persisten feeling of tiredness,267032009
+foggy vision,246636008
+not being able to concentrate,60032008
+lipitor 40 mg,6206011000036109
+bunion,415692008
+hammer toe,122481008
+severe neuropathy,386033004
+sensation of cold toes,309256001
+severe burning of the feet,36031001
+severe headache,25064002
+felt flu-like,95891005
+shouldar ache,45326000
+liptior,3877011000036101
+parkinson's,49049000
+memory problem,386807006
+amyotrophic lateral sclerosis,86044005
+nervous,424196004
+severe muscle spasms,55300003
+morphine,21252011000036100
+muscles weak,26544005
+disabled,21134002
+constant aching/pain,22253000
+pain in lower legs,300954003
+difficulty getting to sleep,59050008
+severe aggitation,21499005
+quick to snap,225005002
+aggitation,24199005
+low back pain,279039007
+went down stamina,248277009
+went down muscles,26544005
+toe cramping,449917004
+fasciculations (muscle twitches),82470000
+muscle atrophy,88092000
+coq-10,77424011000036100
+excessive gas,162076009
+back ache,161891005
+caused me to limp,16973004
+pain in hip,49218002
+pain in calf muscle,300954003
+breathing problems,230145002
+muscle damage,129565002
+black and blue marks,3253007
+blackouts,418648005
+heart palputations,80313002
+abdominal problems,11072008
+loss of drive,277521002
+loss of desire to do or accomplish anything,277521002
+heart desease,56265001
+moderatly elevated cholesterol level,124054003
+cause me to limp,16973004
+buzzing sensation in leg,101000119102
+achy legs,10601006
+bulging disc,73589001
+brain feel kind of foggy,419723007
+mentally in a daze,40917007
+ocular migranes,95655001
+migranes during sexual intercourse,37796009
+migranes,37796009
+tire very quickly muscles,80449002
+muscle tiring,80449002
+heavy aching legs,161873000
+tight throat,247323005
+kidneys hurt,274279008
+black outs,418648005
+feet are cramping,102551008
+parkinson's disease,49049000
+neurological damage,128239009
+coenzyme q10,77424011000036100
+severe myalgias,68962001
+myopathies,129565002
+muscle dmaage,129565002
+neurodegeneration,80690008
+severe numbness in hand,309521004
+tingling in feet,62507009
+soreness in calf muscles,288231001
+vision is giving me problems,63102001
+feel like shit all the time,367391008
+tendonitis in my knees,429360005
+pain in my lower legs and feet,10601006
+knee swells,299322007
+excrutiating pain,67849003
+gout,90560007
+toes swell up,277890004
+swollen knees,248491001
+hobbling around,16973004
+muscle weakness causing nerve damage and imbalance,26544005
+stiffness similar to arthritis,271587009
+s l o w walking,249898006
+in forearms tightness,250069006
+tightness in legs,250069006
+fatigue in legs,80449002
+fatigue in forearms,80449002
+pain in side muscles on one side of chest,95421005
+off balanced-ness,387603000
+viral upper respiratory infection,281794004
+co-enzyme q,77424011000036100
+zinc,37714011000036108
+omega 3-6-9 capsules,931804011000036107
+burping,271834000
+right hand has been hurting,53057004
+right hand has been getting numb,309521004
+slurring in speech,289195008
+sleepless nites,193462001
+sight loss,397540003
+very off balance,387603000
+impossible to move,225601007
+severe edema with swelling of limbs,102572006
+rhabdomyolysis/muscle loss,88092000
+rapid pulse,86651002
+poor coordination while walking,281016006
+difficulty sleeping,301345002
+increased sensitivity to other drugs,419511003
+frequent headaches,25064002
+numbness/tingling?aching/ heavy feeling in limps,310501001
+difficulty walking due to swelling in legs,228158008
+"fatigue, increased",84229001
+chest tightness,23924001
+numness aching feeling to my left arm,298753001
+pain inbetween both shoulder blades,279038004
+feeling shakey,271713000
+more tiered,224960004
+cramping in calves,250084002
+cramping in hamstrings,449917004
+cramping in back muscles,55300003
+losing strength,26544005
+difficulty with memory,276294005
+torn rotator cuff,4106009
+severe back spasm,203095000
+zocar,3904011000036106
+"left leg, below the knee, experienced stiffness",225609009
+burning sensations in hands,90673000
+burning sensations in legs,90673000
+arm pain,102556003
+not concentrating well,60032008
+flu symptons,95891005
+bad dreams,85418005
+purple sploches around waist,3253007
+muscle atrophy arms,88092000
+muscle atrophy legs,88092000
+discoloration of skin [blotchy] on the neck,3253007
+leg cramps,449918009
+abnoraml dreams,85418005
+photosensitivity,90128006
+rhinitis,70076002
+dry skin,16386004
+tinnitus (left ear),60862001
+taste loss,36955009
+hypertension,38341003
+rhinocort,31911000168108
+neck hurt,81680005
+insomia,193462001
+tylenol pm,3080011000036109
+gained a lot of weight,8943002
+bronhitis,32398004
+sinus infection,36971009
+left shoulder is almost immobile,249918006
+tinnitus in my left ear,60862001
+lost my sense of taste,36955009
+heavy legs,161873000
+confusion,40917007
+not able to remember things like whether i had done something or where i had placed something,386807006
+shaking,26079004
+crave carbohydrates,248132003
+crave sweets,248132003
+bouts of diverticulitis,307496006
+liver enzymes elevated,166643006
+muscle pain in the arms,288227007
+muscle pain in the legs,288231001
+muscle pain in the shoulder,288226003
+eye hemorrhages,93478000
+stiffness in joints,84445001
+joint pain in my hips,49218002
+joint pain in my lower back,279063004
+joint pain in my shoulders,267949000
+joint pain in my knees,30989003
+pain in my left thigh,78514002
+constant gas,162076009
+severe abdominal cramps,51197009
+diahhrea,62315008
+aching muscles in back,161891005
+aching muscles in legs,288231001
+foggy,419723007
+unable to concentrate,60032008
+very intense muscle pain with burning from the middle of my back and around my ribs to the center of my chest,288225004
+swollen hands,299037003
+swollen feet,297142003
+sore ribs,297217002
+inability to sleep well,301345002
+no sex drive,8357008
+moodiness,286641001
+always tired,267032009
+increased heart rate,3424008
+headaches every day,571000119103
+lecithin,78584011000036106
+omega 3,931804011000036107
+cramping in feet,102551008
+cramping in toes,102551008
+armpain,102556003
+extreme heaviness in limbs,373931001
+bloody noes,249366005
+short term memory is terrible,247592009
+buzzing in limbs,101000119102
+big time depression,35489007
+extreme muscle weakness,26544005
+soreness in thighs,78514002
+weakness in thighs,309774006
+not as sharp mentally,419723007
+slip in vision,397540003
+extremely dry mouth,87715008
+muscle cramps in lower legs,449918009
+sever swelling of hands,299037003
+sever swelling of ankles,26237000
+sever swelling of feet,297144002
+mild depression,310495003
+diminished eyesight,225581002
+forgetfulness,55533009
+memory failure,386807006
+stiffness in both knees,249913002
+pain in both knees,30989003
+pain in upper back (over left shoulder blade),279038004
+pain in both elbows,74323005
+pain in left arm,287045000
+pain is so intense,76948002
+pains in my left knee,30989003
+arthritus,3723001
+pain has been so intense,76948002
+intense pain,76948002
+stuttering,39423001
+bad ocd,191736004
+muscle pain in upper back,279038004
+hair dryness,79395009
+lipidil micro,4138011000036106
+lipidil,4138011000036106
+dizziness (fainting spells),404640003
+gemfibrozil,21659011000036107
+muscle aches in arms,288228002
+muscle aches in elbows,288228002
+muscle aches in calves,288231001
+joint aches in elbows,202480001
+joint aches in calves,267953003
+joint aches in arms,267950000
+lots of gas,267052005
+calves muscle pain in the,300954003
+thighs muscle pain in the,288230000
+back muscle pain in the,161891005
+neck muscle pain in the,81680005
+glutes muscle pain in the,288230000
+general feeling of weakness,162076009
+difficulty getting up out of a chair,301660008
+palpitations,80313002
+mild panic attack,225624000
+abdominal rash,1806006
+shingles,4740000
+numbness on left side of face,309557009
+numbness on left arm,298753001
+tingling on left arm,62507009
+tingling on left side of face,62507009
+effected my equilibrium,89419008
+hair fell out,278040002
+last straw was ringing in the ears,162352007
+ringing in the ears (tinnitus),162352007
+aching (like the flu),82991003
+extreme vertigo,103298005
+tendonitisis in heels,425772008
+calf leg cramps,250084002
+muscle loss,88092000
+severe tintitinitis (ringing in ears),60862001
+vitorin,21565011000036108
+heel tendon bruising,34840004
+yellow eyes,246975001
+yellow skin,225549006
+urine dark brown,167232003
+twitching in thighs,249966004
+pain in ankle,247373008
+couldnt walk,228158008
+medrol,21605011000036100
+depressions,35489007
+fibromalgyia,24693007
+i felt like i always had the flu,95891005
+permanent damage to my muscles,129565002
+feeling like my mind is fading away,419723007
+mentally weaker,419723007
+lisinopril,21465011000036101
+hydrochlorothiazide,21814011000036109
+high liver enzyme counts,166643006
+muscle fatigue,68962001
+damaged my liver permanently,235856003
+pain in knees,30989003
+stiffness in lower back,298240000
+stiffness in legs,225609009
+excercise intolerance,267044007
+general muscle weakness,162076009
+weak & wobbley knees,309774006
+weak & wobbley wrists,13791008
+weak & wobbley ankles,309774006
+cramping in wrists & hands,250082003
+constant fatigue,84229001
+mental fogginess,419723007
+difficulty swallowing,288939007
+swelling in throat,102617004
+swollen nasal passages,277223000
+allegra,53458011000036102
+nexium,2929011000036108
+weakness in back,309774006
+tendon pain,21545007
+tightened muscles in neck,16046003
+acute pain,274663001
+very severe pains,76948002
+very severe cramps,55300003
+shin pain,10601006
+thigh pain,78514002
+hand pain,53057004
+effexor,45291000168107
+multiple sclerosis,24700007
+brain problems,81308009
+swelling left arm,449618007
+very severe itching,418290006
+intolerable itching,418290006
+vivid weird dreams,419581008
+large dark bruise on hand,5662003
+magnesium,2297011000036108
+olive oil,31645011000036106
+general feeling of malais,162076009
+cramps in thigh,449917004
+pain in the lower legs,300954003
+muscles were very stiff,16046003
+pain neck,81680008
+stiffness neck,161882006
+pain in the shoulder,45326000
+pain in the back,161891005
+increasing pain,22253000
+stiffness at left knee,249913002
+swelling at knee,248491001
+drained,13791008
+cholesterol is high,166830008
+back aches,161891005
+lipitor 20mg,6205011000036102
+stiff joints,84445001
+achy joints,57676002
+stiff,271587009
+muscles pains,68962001
+lead legs,161873000
+oxycotin,3702011000036109
+zanax,3527011000036101
+body pain,82991003
+tender to the touch,278999000
+weird toe tingling,62507009
+pinched nerve in my back,230645003
+easily fatigued,248268002
+cholesterol level sky high,166830008
+pain in my hipjoints,49218002
+pain around the hipjoints,49218002
+wasting of muscles,88092000
+muscle pain related to shoulders,288226003
+general malaise,162076009
+muscle spasmns in left arm,424647005
+muscle spasmns in legs,449917004
+felt like i had lead in my legs,161873000
+terrible pains in knee,30989003
+terrible pains in ankle,247373008
+terrible pains in big toe,285365001
+comfortably couldn't walk,228158008
+comfortably couldn't sleep,301345002
+weird symptoms (eg. popping) in knee,202609006
+weird symptoms (eg. popping) in big toe joints,202617003
+weird symptoms (eg. popping) in ankle,699368004
+terrible pain in shoulders,45326000
+terrible pain in hips,49218002
+pain in my shoulders,45326000
+pain bad,22253000
+avascular necrosis,609410002
+high cholesteral,124054003
+diziness,404640003
+loss of muscle in left leg,88092000
+liptitor,3877011000036101
+wicked back pain,161891005
+hypersensitivity that wrapped around my abdomen,14151009
+simvostatin,21242011000036102
+dificultly in walking,228158008
+pain in my foot,47933007
+thigh cramps,449917004
+sexual dysfunction,56925008
+ache all over,82991003
+cramping of the leg muscles,449917004
+weariness of the leg muscles,80449002
+muscle pain in my chest,281245003
+hard to breath,230145002
+hert from head to my toe,82991003
+leaky heart valves,40445007
+goiter,3716002
+neuropthy in both feet,609600000
+weakness in my arms,309774006
+aches in hip joint,49218002
+aches in calf muscles,300954003
+crabby,55929007
+fish oil (salmon),77436011000036106
+glucosamine sulfate,69813011000036107
+blurring eyesight,246636008
+painful leg cramps,449917004
+muscle weakness in my left arm,309774006
+legs ache so bad,10601006
+ankles ache so bad,247373008
+unable to lose weight even when on strict diet,83421005
+"very, very tired all the time",224960004
+pain in almost every muscle,68962001
+digestive changes,308925008
+eyesight problems,63102001
+co-q10,77424011000036100
+chronic and acute back pain,134407002
+hand cramps,250082003
+carpal tunnel syndrome,57406009
+inflammation of my joints,3723001
+inflammation of my foot muscles,26889001
+plantar fasciitis of my left foot,202882003
+motrin,21885011000036105
+foot problems,118932009
+general weakness in my calves,162076009
+general weakness in my hands,162076009
+general weakness in my feet,162076009
+tingling in the soles of my feet,62507009
+burning in the soles of my feet,36031001
+problems with my balance,387603000
+cramps in my left calf,250084002
+trouble standing for longer periods of time,249902000
+lower leg pain,300954003
+"throbbing,burning sensation",90673000
+general overal weakness,162076009
+dull headaches,25064002
+feverish,386661006
+clamy feeling,102598000
+tingly feeling in scalp,62507009
+tingly feeling in hands,62507009
+felt rotton all day long,213257006
+severe vision problems,95677002
+numbness in limbs,310501001
+problems with balance,387603000
+loss of vison,63102001
+leg muscle and thigh problems,129565002
+light headedness(problem keeping balance),386705008
+tremors in right hand,26079004
+hand writting had deteriorated,102938007
+cq-10,77424011000036100
+parkinson's symptoms,32798002
+tired more than ususal,224960004
+liver enzymes were elevated,166643006
+hip soreness,49218002
+leg soreness,10601006
+feels like my joints don't want to work,399269003
+increase in level of fatigue,84229001
+general weakness,162076009
+terrible pain in my ankles,247373008
+terrible pain in my feet,47933007
+bottoms of my feet hurt,47933007
+tingling toes,62507009
+numb toes,309538000
+sore ankles,247373008
+muscle pain in legs,288231001
+muscle pain in thighs,288230000
+calves muscle pain in,300954003
+joint pain in legs,267953003
+joint pain in thighs,49218002
+calves joint pain in,267953003
+pain so bad,22253000
+turning in bed is painful,425423002
+mild heart attack,22298006
+tiredness is at a high level,224960004
+moving in bed is painful,425423002
+muscle pain in left elbow,74323005
+pain in feet,47933007
+jointaches,57676002
+pains in legs,10601006
+musclesoreness,68962001
+feet pains,47933007
+pains hips,49218002
+pains neck,81680005
+backpain,161891005
+fingers hurt,18876004
+toes hurt,285365001
+head hurt,25064002
+chest hurt,29857009
+ribs hurt,297217002
+itches,418290006
+type2 diabetes,44054006
+capiten,3934011000036103
+glcotrol,21747011000036106
+lasix,26171000168109
+ultram,21486011000036105
+severe muscle cramping,55300003
+can not sleep,301345002
+fingers twitching,60238002
+very painful muscle aches in calves,288231001
+very painful muscle aches in lower back,279039007
+provacal,3848011000036104
+joint pain in knee,30989003
+muscles feel like a wet dish rag,26544005
+body stiffness,271587009
+damaged his liver,235856003
+noticible loss of muscle structure,88092000
+extreme muscle spazms in my lower back,203095000
+joint ache,57676002
+loss of muscle structure in the calf muscles,88092000
+feel tired,314109004
+lower leg weakness,309774006
+cramping of the calf muscles,250084002
+reduced feeling below the knees,429783005
+losing the feeling in his right hand,309086004
+inability to perform fine motor skills,228148009
+excrutiation pain throughout my entire body,67849003
+pains in his legs,10601006
+weakness in his knees,309774006
+eye sight appeared foggy,246636008
+aches and pains in my back,161891005
+hurt every where,82991003
+felt like i had been run over by a truck,102480002
+couldn't walk across the room,228158008
+b-6,77422011000036109
+b-12,77442011000036106
+wrists pain,56608008
+hips pain,49218002
+calf cramping,250084002
+red bumps on my skin,95319004
+over stressed,424582000
+bumps on both sides of my stomach that looks like chicken pots,271807003
+forgetfullness,55533009
+severe mood swings,18963009
+stomach aches,271681002
+type ii diabetes,44054006
+damaging my kidneys,90708001
+mild flatulance,267052005
+vitamin e,77461011000036109
+premarin,2940011000036100
+abnormal liver function,75183008
+skin condition,95320005
+fingertips scaly,16386004
+fingertips got puffy,299060006
+skin began to come off,271767006
+"prickling,numbness in hand",309521004
+strange poisen-ivy like rash on chest and breast,271807003
+muscle degenerating,88092000
+extreme fatique,13791008
+major gastrointestinal problems,267045008
+fitfull sleep,67233009
+cracking sensations in my joints,2764000
+terrible muscle pain,68962001
+malaria,61462000
+chronic muscle pain,68962001
+constant itching,418290006
+needed help getting out of bed and off a chair,82971005
+neck pain up to the back of the head,81680005
+wrist joints sore,202482009
+arm joints sore,267950000
+red dots on skin all over body,271807003
+very bad muscle pain,68962001
+type 11 diabetic,44054006
+gastro problem,162076009
+feelings of fatigue,84229001
+body pains,82991003
+nervous system problems,118940003
+signs of osteoarthritis,396275006
+can't get out of bed in the morning,301676004
+can't bend over,282937004
+can't walk up stairs,165247006
+charley horses,54981004
+neck ache,81680005
+veneer of sadness,420038007
+severe fatigue,84229001
+very bad headaches,25064002
+difficulty in swallowing,288939007
+bursitis,84017003
+cortisone shots,21779011000036103
+memory loss-severe,48167000
+in a fog,419723007
+bottoms of feet hurt,47933007
+felt like shin splints,183202003
+tingle,91019004
+mmdepression,35489007
+muscle issues,129565002
+very blurred vision,246636008
+sudden loss of vision,15203004
+vision is so blurry,246636008
+muscle pain in hips,49218002
+muscle pain in feet,47933007
+big time flatulence,267052005
+achilles tendon tightness,240015000
+could not walk 75 feet,8510008
+"top outer thigh muscle starts to feel very warm, then get numb and lastly it starts to feel very cool (like the icy hot patch)",309537005
+extreme vomiting,332982000
+lazyness (i don't feel like doing anything),277521002
+lack of ability to concentrate,60032008
+changed my personality,102943000
+put weight on suddenly for no reason,8943002
+ringing in my left ear increased,162352007
+calf sensation turned painful,300954003
+pain in my calves,300954003
+pains in hands,53057004
+pains in hips,49218002
+lost muscular strength,26544005
+difficulties to swallow,288939007
+problems with tinnitus,60862001
+"pain in both quads (above knee, back of leg)",78514002
+"cramping in both quads (above knee, back of leg)",449917004
+not motivated to do anything,277521002
+felt generally terrible,213257006
+lower back ache,279039007
+no motivation,277521002
+pain in both upper legs,78514002
+pain in knuckles,202484005
+worse headache than usual (i have migraine),37796009
+prostate cancer,399068003
+legs are sore,10601006
+muscle fatigue in my forearms,80449002
+muscle soreness in my forearms,288228002
+sore cheek muscles,68962001
+tingling and sunny sensation on my face,62507009
+migrane headaches,37796009
+very very blurry vision,246636008
+at times felt like i'm going blind,63102001
+at times felt that i'm going blind,63102001
+extreme weakness,13791008
+diarea,62315008
+bluss and ititching of the face,418363000
+so tired,224960004
+chronic pain in all my muscles,68962001
+chronic pain in all my joints,57676002
+thighs sore,78514002
+severe tingling,62507009
+itchy crawly feeling,418290006
+joint pain in shoulder,267949000
+exhaustion after exercise,267044007
+heavy limbs,373931001
+joint problems,399269003
+aching joints elbows,202480001
+aching joints wrists,202482009
+aching joints shoulders,267949000
+aching joints knees,30989003
+cannot sleep through the night,67233009
+ankles and the soles of my feet feels like i was walking on hot coals,36031001
+effect on your memory,386807006
+ezetrol,3589011000036101
+pains in my back,161891005
+foggy brain,419723007
+sore feet,47933007
+left shoulder upper arm pain,45326000
+skin - white patches,445197008
+jaundice,18165001
+right upper quadrant abdominal pain,301717006
+very elevated liver function tests,166603001
+itching of the skin,418363000
+permanent liver damage,39400004
+cholestatic jaundice,44018007
+pains in my hip,49218002
+depresion,35489007
+cramps in my fingers,250082003
+very blurry eyesight,246636008
+shoulders are inflammed,443798008
+neck right down to my right shoulder blade is very very sensitive and very very painful,81680005
+concentration is poor,26329005
+muscle pain over the entire body,68962001
+pain in right thigh,78514002
+aches and pain in both shoulders,45326000
+aches and pain in both arms,102556003
+decrease in sexual desire,8357008
+nagging muscle pain between and just below my shoulder blades,288226003
+persistent fatigue,84229001
+moderate insomnia,193462001
+unable to focus,60032008
+severe weight loss,309257005
+loss of strength,26544005
+direar,62315008
+severe muscle aces,68962001
+headace,25064002
+collapades in the floor,271787007
+blisters,417237009
+bleed,131148009
+muscle aces,68962001
+severe headaces,25064002
+forget things all the time,55533009
+very sore muscle pain in both shoulders,288226003
+heart palpatations,80313002
+sore knees,30989003
+felt like a truck hit me,102480002
+very bad pains in arms,90834002
+very bad pains in shoulders,45326000
+very bad pains in hands,53057004
+"freezing cold,like arms plunged into freezing water,then burning sensations",103002009
+terribe pain,76948002
+bone cancer,428281000
+eczema on feet,402234004
+eczema on hands,238539001
+rash on upper left torso,271807003
+eczema,43116000
+gaining excess weight,8943002
+"stomach is bloated, with excess gas",271835004
+increased memory loss,386807006
+rarely sleep well,301345002
+felt like i was walking though sludge,373931001
+only wanted to sleep,77692006
+have no energy,248274002
+trouble with my liver,235856003
+"edema-swelling of the hands, feet, legs",424372002
+lasiks,26171000168109
+muscle aches in arms,68962001
+plavix,3475011000036104
+zestril,4230011000036107
+lopressor,21662011000036107
+pain behind the knee,30989003
+hematuria,34436003
+do not smoke and have never smoked,8392000
+high blood pressure,24184005
+genetically high ldl,162076009
+"terrible, migratory joint pain all over my body",68962001
+disabling fatigue,13791008
+flu-like malaise,95891005
+quite ill,213257006
+rheumatoid arthriitis,69896004
+lyme disease,23502006
+active parvovirus infection,186748004
+spasms in upper thighs,45352006
+right knee is so painful,30989003
+hurts to get out of a chair,425423002
+hurts to go up stairs,425423002
+hurts to get up in the morning,425423002
+right foot hurts,47933007
+bottom of my foot is extremely tender,47933007
+liver injury,39400004
+kidney injury,40095003
+lipitor (atorvastatin),3877011000036101
+muscle pain in the calves,288231001
+muscle pain in the lower back,279039007
+tenderness in the lower back,279039007
+weakness in the calves,309774006
+weakness in the lower back,249938007
+malaise,367391008
+acute kidney failure,14669001
+liver failure,59927004
+generalized skin discoloration,162076009
+overweight,238131007
+b/l shoulder pain,45326000
+sinivastatin,21242011000036102
+pain in my shoulder,45326000
+general fatigue,162076009
+severe swolen/inflamation of the fingers/hands,448589005
+geneal aches and pains,162076009
+severe swolen/inflamation of the fingers/hand,448589005
+aching in legs,10601006
+aching in back,161891005
+aching in shoulders,267949000
+in back weakness,249938007
+in shoulders weakness,249940002
+in legs weakness,309774006
+knees aches,30989003
+chest aches,29857009
+short term memory lacking,247592009
+concentration is worse than ever,26329005
+acne breakouts on my face and neck,11381005
+memeory problems,386807006
+pain trying to walk,426899007
+tiredeness,267031002
+leg joint pain similar to arthritis,267953003
+finger joint pain similar to arthritis,57676002
+feet joint pain similar to arthritis,57676002
+big weight gain in stomach area,262286000
+tennis elbow,202855006
+plantar fasciatis,202882003
+slight neck pain,81680005
+pain in both legs,10601006
+unable to climb stairs,165247006
+unable to stand,161903000
+pain in the legs,10601006
+failed knee joits,428724006
+massive triangular rash on my forehead,271807003
+skin was very red and rough,444827008
+could not get to sleep,59050008
+i didn't feel right,367391008
+intermittent pain,314642004
+pain in the leg,10601006
+tingling of feet,62507009
+elevated liver function,67251005
+inability to pull myself from bed,129859006
+felt like i was coming down with flu,95891005
+diarrea,62315008
+flu symptoms,95891005
+bad taste in mouth,302188001
+hair losss,278040002
+"when i went to sit down instead of sitng normaly i would almost fall down in the chair no control no strength, upon getting up i had to hold on to something to get up",26544005
+"hands, have little or no grip",299042006
+burning sensations,90673000
+pains in her back,161891005
+frequent urination,162116003
+hard time sleeping,301345002
+asthma flare-ups,195967001
+weird dreams,419581008
+so weak,13791008
+"ached all over, especially in legs",82991003
+sick to my stomach,162059005
+cramping in both calves,250084002
+like im in a fog all the time,419723007
+type ii diabetic,44054006
+unsteasiness walking,22631008
+acute pain in both feet,47933007
+weakness in knees,309774006
+numbness in fingers,309536001
+general weakness in hands,162076009
+declining physical ability,13791008
+joint pain (elbows!),202480001
+buzzing left leg,101000119102
+high tolerance for pain,247408001
+short-term memory disappeared,247592009
+lack of attention,79890006
+vivid nightmares,419145002
+fingers swelled up,299060006
+joints in my hands hurt,202472008
+hurt to bend my knee,299377003
+legs feel swollen,449614009
+legs feel tired,80449002
+destroyed my self-confidence,225482007
+taking one's appetite for sex away,8357008
+pain in upper right arm,287046004
+pain in my arm and shoulder,102556003
+no smoking,8392000
+cholesterol has been high,166830008
+everything hurts,82991003
+muscular pain in the back,161891005
+diarreah,62315008
+muscle aches & pains,68962001
+severe back spasms,203095000
+spasms all throughout my legs,45352006
+weakness in my right arm,309774006
+feeling like i was walking through waist-deep mud,161874006
+i simply could not walk,282145008
+extreme anxiety,61387006
+potassium,32643011000036106
+blinding headaches,25064002
+feel pretty lousy,367391008
+colin cancer,363406005
+liver enzymes to rise,166643006
+pain in my lower legs,10601006
+cramping in my lower legs,449918009
+cramping in my hands,250082003
+numbness in all of my toes,309539008
+numbness in all of my finger tips,309536001
+wake up on and off all night long,423052008
+finger numbness,309536001
+hand numbness,309521004
+unable to lift my legs,284151004
+unable to put on my pants,284977008
+discomfort in my legs,247347003
+sleepy all or most sf the time,248262001
+muscle disintegration/degeneration,88092000
+loss of memory,48167000
+severe edema of lower extremities,102572006
+numbness on left side,44077006
+poor coordination while walking (kept bumping into things),281016006
+light-headedness (hurt to hold my head up or turn my head from side to side and that made driving real difficult),386705008
+edema,267038008
+"loss of muscle strenth, mainly calves",309249007
+feel like an airhead,419723007
+slightly dizzy virtually all the time,404640003
+frequently unable to think clearly,247640008
+alzheimer's,26929004
+exhausted all the time,60119000
+severe chronic fatigue,52702003
+problems with concentration,60032008
+unable to find words or remember names,286381004
+hardly able to lift things,288332005
+legs would go wobbly,309774006
+exhausting,60119000
+pain in my legs,10601006
+slight muscle aches in my back,161891005
+simvistatin,21242011000036102
+lipex,3298011000036103
+pain in hips,49218002
+cannot walk even a short distance due to pain,282145008
+legs felt like they had run a marathon,80449002
+deep bruising,262558009
+joint pain in hips,49218002
+joint pain in elbows,202480001
+joint pain in spine,48926009
+bursitis in the hips,81498004
+cannot walk more than 5 yards,228158008
+achilles peritendonitis,11654001
+sore fingers,18876004
+my gait was like someone who could barely walk,22325002
+pain in throat,162397003
+tingling in side of face,62507009
+abdominal irritation,367466007
+sensation that feels like electricity zapping around my midsection,18156008
+feel hot,373932008
+feeling in a fog,419723007
+muscle weakness in mouth area,26544005
+speech difficulties like pronunciation,47004009
+muscle weakness in my right hand causing me to lose grip and drop things,309774006
+lack of sex drive,248096004
+neuroma in the right foot,429661002
+left heel pain,2733002
+discomfort when i walk,426899007
+vit. c,77435011000036104
+pain in my arm,102556003
+tingling in my arms,62507009
+lost all strength,26544005
+couldn't use my arm,284140004
+myopathy,129565002
+anorexia,79890006
+extreme gas,162076009
+miocardial infarction,22298006
+pain was unbearable,67849003
+pain from the headache,25064002
+neuroma,443892003
+metatarsalgia,10085004
+left foot started hurting,47933007
+horrible pain,76948002
+loss of muscel strength,26544005
+cramping neck muscels,95418008
+loss of sexual drive,8357008
+halucinations during day,7011001
+reduced mental capabiities,386806002
+excessive sleep requirements,77692006
+transient global amnesia,230736007
+feeling horrible like a severe flu just hit me,213257006
+couldn't get enough sleep,248256006
+was incredibly week,13791008
+had pains throughout my upper body,102480002
+fluids pooling in my lower extremeties - especially my feet,43498006
+general muscle soreness,162076009
+tingling hands,62507009
+aches in hands,53057004
+neuropothy in right arm,609599003
+neuropothy in right hand,609599003
+severe pain in left leg,300954003
+sudden onset of pain,274663001
+lumpy swelling on both feet in same place on each,297142003
+stumbeling,250991000119100
+frequent sudden urges to go pee that came out with a force that sprayed everywhere,162116003
+burscitis,84017003
+horriable pain that almost throws me down,76948002
+loss of muscle,88092000
+liver disfunction,59927004
+restless leg syndrom,32914008
+high triglycerides,166848004
+feel flu like,95891005
+cramps in legs,449917004
+cramps in chest,55300003
+rashes appear,271807003
+sleep alot,77692006
+feel fatigued,84229001
+gums swelling,70346000
+visual anomalies,7973008
+numbness in muscles,44077006
+severe pain close to my the crotch area,76948002
+could barely move,8510008
+could barely walk;had to use a cane,282195009
+enlarged liver,80515008
+muscles had become weak and stressed,26544005
+zetia,21930011000036101
+terrible charlie horses,54981004
+loss body balance,282299006
+lost some body balance,387603000
+lost some memory,386807006
+geting bad swets,162076009
+finger stiffness,271587009
+finger joints locking up,84445001
+locking fingers,299110002
+tendon ruptures,415749005
+elevated levels of triglycerides,166848004
+elevated levels of cholesterol,166830008
+tore my right achilles tendon just simply taking off from a sprinters stance,429513001
+tore my left achilles tendon by simply jumping in the air,429513001
+tendon damage/ruptures,415749005
+abdominal distention - feel full,41931001
+back pain in the am,102556003
+weird tight feeling in my head,299954009
+loss of muscle strength,26544005
+sores on the inner cheeks,473008002
+weird tight feeling in chest cavity,23924001
+tryc through the roof,166848004
+mild aches,82991003
+occasional indigestion,162031009
+extreme ache in left leg,287047008
+arm aching,102556003
+"ache was extreme, almost unbearable",76948002
+shrinking muscels leg,88092000
+shrinking muscels arms,88092000
+shrinking muscels neck,88092000
+vertgo,399153001
+halucinations,7011001
+little circulation in my fingers,4249000
+ulcerations,429040005
+could not lie on either side in bed,282926000
+shoulder pain was unbearable,45326000
+very serious depression,35489007
+thoughts of hurting myself,102911000
+periphael neuropathy,302226006
+tinninitus,60862001
+trigeminal neuralgis,31681005
+stiffness in hands,249915009
+cramping in calf,250084002
+liver enzymes sky-high,166643006
+"permanent, irreversible muscle damage",95847005
+muscle damage,95847005
+irregullar heartbeat,361137007
+sever fatigue,84229001
+type 1 diabetes,46635009
+face had swollen up,278528006
+walk was a very painful and a very slow,426899007
+degenative muscle problem,363058009
+sleep disturbances,44186003
+problems with various muscles,129565002
+lots of pain in the muscles,68962001
+muscles very tight,250069006
+neck stiff,161882006
+muscles are like boards they're so tight,250069006
+pain has gone into my upper arm on my left side,287045000
+pain has gone into my shoulder,45326000
+right arm is tight,285397001
+lower back is also tight,250069006
+terrible headaches,25064002
+tight neck muscles,56731001
+elevated creatine,166717003
+discomfort,247347003
+persistent pain in knee,30989003
+persistent pain in calf,300954003
+sleep disturbance,44186003
+mood change,18963009
+horrible fatigue,84229001
+tingling in my legs,429783005
+tingling in my fingers,62507009
+stomach problems,300306001
+muscle tone depletion,398152000
+strength depletion,26544005
+numbness in upper legs from knee to thigh,309537005
+pain in left foot,47933007
+numbness in left foot,309538000
+extreme depression,310497006
+suicidal thoughts,6471006
+stiffness in whole body,271587009
+no power to standup himself,282872002
+loss of weight,89362005
+acute weakness in the muscles of whole body,26544005
+muscles of whole body dilution in size,300043006
+constipitation,14760008
+no control over urination,165232002
+loss of vocal sound,44564008
+choking the throat,249489001
+lungs detoriation like less intake of oxigen,80954004
+swollen ankles,267039000
+burning ankles,90673000
+ball of the foot would feel as if it was inflamed,36031001
+constant pins and needles in the toes,309087008
+constant pins and needles in the ball of the foot,62507009
+very painful pins and needles over entire foot,62507009
+foot skin flaked off like dermatitis,271767006
+ankle skin flaked off like dermatitis,271767006
+elevated white blood cell count (very high),165509000
+fingers and toes were tingling,62507009
+pins and needles feeling,62507009
+pains all over body,82991003
+groggy,102897001
+extreme dehydration,450316000
+extremely dry eyes,162290004
+eyes microabrasions,283050005
+eyes are so dry,162290004
+unexplained fatigue,84229001
+no energy all day,248274002
+unexplained cough,49727002
+aches and pain from head to toe,82991003
+very grouchy,55929007
+pains so bad,22253000
+pins and needles on right arm,62507009
+a lot grouchier,55929007
+atacand,3659011000036102
+transient amnesia,307413004
+hard to stay awake,271782001
+degenerative back disease,77547008
+feel achy,47933007
+blury vision,246636008
+bad balance,249985001
+sore feet (faciitis),202882003
+hair falling out,278040002
+autoimmune polyarthritis,6211002
+hands sore,53057004
+joint pain (knees),30989003
+painfull welts on bottom of feet,247472004
+mild joint pain,57676002
+permanent joint damage,125610000
+loss of speech,29164008
+tia's,266257000
+feeling extremely tired,314109004
+foot cramps,102551008
+legs began feeling very tired,80449002
+couldn't go up stairs easily,165247006
+cramping events in my legs,449917004
+legs were hurting too much,10601006
+legs are very weak,80449002
+back spasms,203095000
+foggy thinking,419723007
+uneasiness,247806005
+liver disease,235856003
+mental confusion,40917007
+balance off,387603000
+back pain lower,279039007
+back pain upper,279038004
+finger pins and needles,62507009
+brain vague,248236005
+feeling desperately miserable,420038007
+terrible leg cramps,449917004
+sex drive has decreased,8357008
+brain cancer,428061005
+brain cancer (glial cell related cancer),428061005
+bedridden,160685001
+unable to feed himself,289001005
+unable to speak,286369003
+muscle pain in back,161891005
+muscles on the sides of my back were constantly painful,95421005
+melatonin,923927011000036105
+problems with feet,118932009
+tingly hands,62507009
+terrible musche aches,68962001
+face looks puffy,278528006
+eyes hurt,41652007
+loss of sense of smell,44169009
+increase appetite,72405004
+extreme fatigued,13791008
+sore hip(tightit band),49218002
+adiabetic,73211009
+intense anxiety attacks,300895004
+intense depression,35489007
+muscle aches in legs,68962001
+blisterey rash on my arms,247464001
+blisterey rash on my legs,247464001
+vision became blurry,111516008
+simivastatin,21242011000036102
+muscle cramps in legs,449917004
+muscle cramps in feet,102551008
+muscle cramps in arms,424647005
+muscle cramps in ribs,203095000
+muscle cramps in face,32402008
+weakness in muscles,26544005
+can barely make it up one flight of stairs,282195009
+torn ham string,209777000
+tingling in my feet,62507009
+tingling in my shins,62507009
+numbness in my feet,309538000
+numbness in my shins,309537005
+my toes ached,285365001
+my feet hurt,47933007
+provastatin,21606011000036107
+can't even sleep at night,193462001
+sensations of tingling in my legs,429783005
+sensations of tingling in my feet,309087008
+pain in their toes,285365001
+pain in their feet,47933007
+pain in their shins,10601006
+breathing difficulties,230145002
+stength and stamina destroyed,248277009
+strong tingling in one hand,309086004
+tinititis,60862001
+ear aches,16001004
+zorloft,3559011000036109
+noten,4422011000036109
+seriously upset my stomach,162059005
+struggling walking too far,228158008
+vitc,77435011000036104
+cough heavily,49727002
+pain in elbows,74323005
+pain in wrist,56608008
+unable to even climb 1 flight of stairs,165247006
+uncontrollable gas,267052005
+burning in my stomach,21005005
+muscule pain,68962001
+numb leg,309537005
+painful shoulder,45326000
+joint pain in wrist,202482009
+voltaren,28551000168108
+gastro effects,162076009
+kidney pain,274279008
+elevated bp,38341003
+my heart rate jumped to 106,3424008
+hard to breathe,230145002
+wanting to quit everything and give up,247753000
+solaraze,39651011000036100
+altered taste,271801002
+blisters in my mouth,283121001
+itchy scalp,275921007
+pains back,161891005
+rise in bp,24184005
+bloated stomach,116289008
+diarreha,62315008
+kneejoin paint,30989003
+voltaren-xr,28551000168108
+ulcer lower bowel,46040000
+blood clots that traveled to my eye,246682000
+tylonol,3080011000036109
+voltaren gel,38181000168109
+agitated,24199005
+hideously increased muscle tension,250069006
+short tempered,285849008
+impatient,286755001
+pain in hand,53057004
+pain in arm,102556003
+agitation,24199005
+spasms in my back,203095000
+allergic reaction,419076005
+numbness in tongue and gums,95359001
+pains through my hips,49218002
+cortisone injection,21779011000036103
+ibs,10743008
+high blood pressure,38341003
+stomache ulcers,397825006
+asthmatic,195967001
+infection,40733004
+pain in my stomach,271681002
+acute gastritis,25458004
+chronic pain,82423001
+intestinal pain,9991008
+diverticulitis,307496006
+blood in stool,405729008
+intestinal/stomach pain,9991008
+elevated bloodb pressure,38341003
+gastritis,162076009
+itch on my head,275921007
+genitals and lips excruciating,162076009
+lips started to swell,699376002
+epipen,59781000168101
+bruising,125667009
+heart was thumping,161968007
+pain in my kidney area,274279008
+pain in stomach,271681002
+skin irritation,367466007
+volteren,28551000168108
+wheezing,56018004
+skin rash back of my neck,271807003
+slipped vertabrae,73589001
+degenerative disk,77547008
+chronic bone/joint pain,57676002
+tightness in my throat,247323005
+i had trouble standing up from sitting position,249903005
+mild headache,25064002
+gurgling,18101008
+mild cramping,55300003
+bad headache,25064002
+iubrofen,21885011000036105
+extreme sweating,52613005
+panadeine,13481000168104
+ibuprofen plus,61777011000036104
+codeine,21821011000036104
+upset my stomach,162059005
+voltaren rapid 25,54020011000036108
+face has felt numb,309557009
+pain in my knee,30989003
+acute pancreatic attack,75694006
+bp was very low,23520002
+yellow color to my skin,225549006
+couldn't walk straight,228158008
+hoarseness/coughing,50219008
+heart racing,248648003
+disoriented,62476001
+mellows me out,271599002
+hurts throat,162397003
+tightness in shoulders,299954009
+mobic,3572011000036102
+zipsor,21288011000036105
+bone pain,12584003
+herniated discs,73589001
+lupus pain,200936003
+pain from the herniated discs,73589001

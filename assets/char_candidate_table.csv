@@ -1,0 +1,886 @@
+snomed_id,concept_name
+10001005,Bacterial sepsis
+10085004,Metatarsalgia
+101000119102,Numbness and tingling sensation of skin
+102480002,Generalised acute body pains
+102491009,Immobile
+102551008,Cramp in foot
+102556003,Pain in upper limb
+102572006,Oedema of lower extremity
+102598000,Clammy skin
+102617004,Congestion of throat
+102897001,Feeling intoxicated
+102911000,Thoughts of self harm
+102938007,Difficulty writing
+102943000,Personality change
+103002009,Sensation of hot and cold
+103281005,Blocked ears
+103298005,Severe vertigo
+105504002,Dependance on walking stick
+105981003,Disorder of cardiac function
+10601006,Pain in lower limb
+10743008,Irritable bowel syndrome
+108367008,Dislocation of joint
+110288007,Joint tenderness
+11072008,Nonspecific abdominal symptom
+111224002,Derangement of meniscus
+111516008,Blurring of visual image
+11381005,Acne
+116289008,Abdominal bloating
+11654001,Achilles tendonitis
+118932009,Disorder of foot
+118940003,Disorder of nervous system
+12063002,Rectal haemorrhage
+122481008,Hammer toe
+124042003,Increased lipid
+124054003,Increased cholesterol esters
+124055002,Decreased cholesterol esters
+125610000,Joint injury
+125667009,Contusion
+12584003,Bone pain
+128139000,Inflammatory disorder
+128239009,Injury of nervous system
+128605003,Disorder of extremity
+129103003,Endometriosis
+129565002,Myopathy
+129859006,Impaired bed mobility
+129899009,Blood pressure alteration
+130989002,Sleep deprivation
+131053002,Decreased progesterone level
+131078003,Decreased testosterone level
+131148009,Bleeding
+13164000,Reduced visual acuity
+134407002,Chronic back pain
+13481000168104,Panadeine
+13543005,Pressure
+13644009,Hypercholesterolaemia
+13746004,Bipolar disorder
+13791008,Asthenia
+1402001,Fear
+14151009,Hyperaesthesia
+14669001,Acute renal failure
+14760008,Constipation
+15188001,Hearing loss
+15203004,Sudden visual loss
+15611000168108,Naprosyn
+16001004,Otalgia
+16046003,Muscle rigidity
+160685001,Bed-ridden
+161722004,Menstrual loss increasing
+161873000,Heavy legs
+161874006,Heavy feeling
+161882006,Stiff neck
+161891005,Backache
+161898004,Falls
+161903000,Unable to stand
+161968007,Bumping heart
+162031009,Indigestion
+162043005,Hunger pain
+162059005,Upset stomach
+162076009,Excessive upper gastrointestinal gas
+162116003,Urinary frequency
+162221009,Restlessness
+162290004,Dry eyes
+162308004,Throbbing headache
+162315007,Morbid thoughts
+162352007,Ringing in ear
+162397003,Pain in throat
+16269008,Neuralgia
+16331000,Heartburn
+16386004,Dry skin
+165232002,Urinary incontinence
+165247006,Unable to climb stairs
+165509000,White blood cell count abnormal
+166603001,Liver function tests abnormal
+166643006,Liver enzymes abnormal
+166702002,Raised serum calcium level
+166717003,Serum creatinine raised
+166830008,Serum cholesterol raised
+166848004,Serum triglycerides raised
+166892002,Random blood sugar raised
+167232003,Urine: dark/concentrated
+16973004,Limping
+177241000036105,paracetamol + ibuprofen
+17971005,Sedated
+1806006,Eruption
+18101008,Hyperactive bowel sounds
+18156008,Abdominal hyperaesthesia
+18165001,Jaundice
+18193002,Hypochondriasis
+183202003,Shin splint
+186748004,Parvovirus infection
+18718003,Gingival disease
+18876004,Pain in finger
+18963009,Mood swings
+19155002,Dysfunctional uterine bleeding
+191736004,Obsessive-compulsive disorder
+193093009,Bell's palsy
+193462001,Insomnia
+195967001,Asthma
+197321007,Steatosis of liver
+200936003,Lupus erythematosus
+202472008,Hand joint pain
+202480001,Elbow joint pain
+202482009,Wrist joint pain
+202484005,Proximal interphalangeal joint of finger pain
+202609006,Clicking knee
+202617003,Clicking interphalangeal joint of toe
+202852009,Shoulder tendonitis
+202855006,Lateral epicondylitis
+202882003,Plantar fasciitis
+203095000,Spasm of back muscles
+209777000,Rupture tendon thigh
+21005005,Burning epigastric pain
+21134002,Disability
+21238011000036103,oestradiol
+21242011000036102,simvastatin
+21252011000036100,morphine
+21286011000036106,paracetamol + codeine
+21288011000036105,diclofenac
+21290011000036100,Testosterone
+21296011000036107,rabeprazole
+21317011000036101,enalapril
+21322011000036108,amlodipine
+213257006,Generally unwell
+21343011000036103,atorvastatin
+21417011000036105,fenofibrate
+214264003,Lethargy
+21433011000036107,paracetamol
+21465011000036101,lisinopril
+21486011000036105,tramadol
+21496011000036106,prednisone
+21499005,Feeling agitated
+21520011000036107,misoprostol
+21522001,Abdominal pain
+21545007,Tenalgia
+21565011000036108,ezetimibe + simvastatin
+21589011000036108,clonidine
+21605011000036100,methylprednisolone
+21606011000036107,pravastatin
+21659011000036107,gemfibrozil
+21662011000036107,metoprolol
+21678011000036102,meloxicam
+21719011000036107,aspirin
+21747011000036106,glipizide
+21779011000036103,cortisone
+21809011000036108,diclofenac + misoprostol
+21814011000036109,hydrochlorothiazide
+21821011000036104,codeine
+21885011000036105,ibuprofen
+21911011000036104,glibenclamide
+21930011000036101,ezetimibe
+22193007,Osteoarthrosis of hand
+22253000,Pain
+22298006,Myocardial infarction
+22325002,Abnormal gait
+224960004,Tired
+224962007,Hot sweats
+225005002,Unable to control anger
+225014007,Feeling empty
+225460000,Constantly crying
+225473001,Feels everything is futile
+225482007,Lacks confidence
+225508006,Poor self-image
+225549006,Yellow skin
+225581002,Sight deteriorating
+225601007,Unable to move
+225609009,Stiff legs
+225610004,Stiff limbs
+225624000,Panic attack
+22631008,Unsteady when walking
+228148009,Fine motor impairment
+228158008,Walking disability
+2297011000036108,magnesium | (substance)
+230145002,Difficulty breathing
+230490003,Excessive day and night-time sleepiness
+23056005,Sciatica
+230645003,Compression neuropathy of trunk
+230690007,Cerebrovascular accident
+230736007,Transient global amnesia
+233604007,Pneumonia
+23502006,Lyme disease
+23520002,Decreased venous pressure
+235594008,Bowel dysfunction
+235856003,Liver disease
+235999009,Intra-abdominal haematoma
+236071009,Chronic diarrhoea
+236423003,Renal impairment
+236620008,Infective cystitis
+237602007,Metabolic syndrome X
+238131007,Overweight
+238539001,Hand eczema
+238810007,Flushing
+23924001,Tight chest
+239720000,Tear of meniscus of knee
+239725005,Rupture of anterior cruciate ligament
+239873007,Osteoarthritis of knee
+239965002,Tendonitis AND/OR tenosynovitis of the elbow region
+240015000,Contracture of tendon of ankle region
+240131006,Rhabdomyolysis
+24184005,Finding of increased blood pressure
+24199005,Feeling agitated
+246636008,Blurred vision - hazy
+246682000,Blood clot in eye
+24693007,Fibromyalgia
+246975001,Scleral icterus
+24700007,Multiple sclerosis
+247323005,Tightness in throat
+247347003,Discomfort
+247373008,Ankle pain
+247408001,High pain threshold
+247412007,Labour pain
+247441003,Erythema
+247464001,Blistering rash
+247472004,Hives
+247592009,Poor short-term memory
+247640008,Unable to think clearly
+247753000,Loss of interest
+247806005,Ill-at-ease
+248096004,Lack of libido
+248132003,Craving for food or drink
+248234008,Mentally alert
+248236005,Mentally vague
+248255005,Cannot sleep at all
+248256006,Not getting enough sleep
+248262001,Always sleepy
+248268002,Tires quickly
+248274002,Lack of energy
+248277009,Lack of stamina
+248422003,Warm hands
+248490000,Bloating symptom
+248491001,Swollen knee
+248581005,Rapid shallow breathing
+248648003,Palpitations - rapid
+248657009,Pounding heart
+248966006,Prolonged periods
+249366005,Bleeding from nose
+249477003,Increased thirst
+249489001,Choking
+249544004,Abdominal muscles tense
+249898006,Slow on legs
+249902000,Difficulty standing
+249903005,Difficulty standing up
+249913002,Knee stiff
+249914008,Hip stiff
+249915009,Hand joint stiff
+249918006,Shoulder stiff
+249938007,Weakness of back
+249940002,Shoulder girdle weakness
+249966004,Spasmodic movement
+249985001,Poor balance
+250069006,Muscle tension
+250082003,Hand cramps
+250084002,Cramp in calf
+25064002,Headache
+250991000119100,Stumbling gait
+2531000168109,Andrews Tums Antacid
+253522006,Right ventricular dilatation
+25458004,Acute gastritis
+25701000168107,Enbrel
+258155009,Photosensitisation due to sun
+26079004,Tremor
+26171000168109,Lasix
+262286000,Weight increased
+26237000,Ankle oedema
+262558009,Deep bruising
+262966007,Rupture of muscle
+26329005,Poor concentration
+26413003,Low motivation
+26544005,Muscle weakness
+266257000,Transient ischaemic attack
+266599000,Dysmenorrhoea
+266601003,Excessive and frequent menstruation
+26677001,Sleep pattern disturbance
+267031002,Tiredness symptom
+267032009,Tired all the time
+267036007,Dyspnoea
+267038008,Oedema
+267039000,Swollen ankle
+267044007,Impaired exercise tolerance
+267045008,Gastrointestinal symptom
+267052005,Flatulence/wind
+267064002,Urinary retention
+267076002,Feeling lonely
+267078001,Involuntary movement
+267079009,Trembles
+267728009,Blind or low vision - one eye only
+267949000,Shoulder joint pain
+267950000,Arthralgia of the upper arm
+267953003,Arthralgia of the lower leg
+26889001,Myositis
+26929004,Alzheimer's disease
+271137009,Bad circulation - vasomotor change
+271584002,Cold hands
+271585001,Cold feet
+271587009,Stiffness
+271594007,Syncope
+271599002,Feeling content
+271681002,Stomach ache
+271713000,General unsteadiness
+271737000,Anaemia
+271767006,Peeling of skin
+271782001,Drowsy
+271787007,Collapse
+271801002,Taste sense altered
+271807003,Rash
+271832001,"Flatulence, eructation and gas pain"
+271834000,Burping
+271835004,"Abdominal distension, gaseous"
+271870002,Low blood pressure reading
+271873000,Senility
+272022009,C/O - feeling depressed
+2733002,Heel pain
+274135002,Arthritis/arthrosis
+274141009,Tendon contracture
+274279008,Renal pain
+274663001,Acute pain
+274667000,Jaw pain
+275319005,Swollen legs
+275921007,Scalp itchy
+276294005,Isolated memory skills
+2764000,Joint crepitus
+277223000,Swollen nasal mucosa
+277521002,Loss of motivation
+277890004,Toe swelling
+278040002,Loss of hair
+278528006,Facial swelling
+278999000,Skin tenderness
+279028009,Ovarian pain
+279038004,Thoracic back pain
+279039007,Low back pain
+279063004,Lumbar facet joint pain
+279069000,Musculoskeletal pain
+279084009,Chest discomfort
+280816001,Facial palsy
+281016006,Incoordination
+281245003,Musculoskeletal chest pain
+281794004,Viral upper respiratory tract infection
+282145008,Unable to walk
+282180007,Unable to walk up step
+282195009,Difficulty walking up stairs
+282299006,Unable to balance
+282475008,Unable to run
+282872002,Unable to stand up
+282926000,Unable to lie down
+282937004,Unable to bend down
+282966001,Unable to sit
+283050005,Abrasion of eye region
+283121001,Traumatic blister of mouth
+283416005,Cut of hand
+283902008,Has delayed recall
+284136008,Unable to move all four limbs
+284140004,Unable to move arm
+284146005,Unable to move hand
+284149003,Difficulty moving hand
+284151004,Unable to move leg
+284252000,Unable to make a fist
+284977008,Difficulty dressing
+285305004,Spots on skin
+285365001,Pain in toe
+285395009,Strain of calf muscle
+285397001,Tightness in arm
+28551000168108,Voltaren
+285849008,Difficulty controlling anger
+286369003,Unable to speak
+286381004,Unable to find words
+286387000,Unable to initiate words
+286641001,Moody
+286755001,Impatient character
+287045000,Pain in left arm
+287046004,Pain in right arm
+287047008,Pain in left leg
+28743005,Productive cough
+288225004,Myalgia/myositis - multiple
+288226003,Myalgia/myositis - shoulder
+288227007,Myalgia/myositis - upper arm
+288228002,Myalgia/myositis - forearm
+288230000,Myalgia/myositis -pelvis/thigh
+288231001,Myalgia/myositis - lower leg
+288332005,Unable to lift
+288335007,Difficulty lifting
+288885009,Unable to eat
+288939007,Difficulty swallowing
+289001005,Unable to feed self
+289195008,Slurred speech
+289530006,Vaginal bleeding
+289621007,Uterus problem
+289903006,Menopause present
+29164008,Speech impairment
+2922011000036103,Fosamax
+2929011000036108,Nexium
+2940011000036100,Premarin
+29542008,Uterine spasm
+297142003,Foot swelling
+297144002,Swollen feet
+297217002,Rib pain
+298170003,Knee joint inflamed
+298240000,Sacroiliac joint stiff
+29857009,Chest pain
+298753001,Numbness of upper limb
+298941006,Swelling of wrist joint
+299037003,Swelling of hand
+299042006,Weakness of hand
+299060006,Swelling of finger
+299110002,Finger joint locking
+299322007,Swelling of knee joint
+299377003,Knee joint painful on movement
+299933002,Vibration sensation present
+299954009,Tightness sensation
+300043006,Reduction of bulk of muscle
+300306001,Stomach problem
+300888008,Swelling of body region
+300895004,Anxiety attack
+300954003,Pain in calf
+300955002,Pain in thumb
+300956001,Low back strain
+301202006,Nasal sinus problem
+301345002,Difficulty sleeping
+301657001,Unable to get out of a chair
+301660008,Difficulty getting out of a chair
+301676004,Unable to get off a bed
+301679006,Difficulty getting off a bed
+301717006,Right upper quadrant pain
+302188001,Bad taste in mouth
+302226006,Peripheral neuropathy
+304297005,Decreased range of shoulder movement
+304534000,Crying
+30473006,Pain in pelvis
+307077003,Feeling hopeless
+307413004,Transient memory loss
+307496006,Diverticulitis
+3080011000036109,Tylenol
+30811009,Ulcer of oesophagus
+308925008,Digestive symptom
+309086004,Paraesthesia of hand
+309087008,Paraesthesia of foot
+309249007,Calf muscle weakness
+309256001,Cold foot
+309257005,Excessive weight loss
+309521004,Numbness of hand
+309536001,Numbness of finger
+309537005,Numbness of lower limb
+309538000,Numbness of foot
+309539008,Numbness of toe
+309557009,Numbness of face
+309774006,Weakness of limb
+309838005,Emotional upset
+30989003,Knee pain
+310495003,Mild depression
+310497006,Severe depression
+310501001,Numbness of limbs
+31384009,Polymyositis
+314109004,Feeling tired
+314642004,Intermittent pain
+315224006,Heavy episode of vaginal bleeding
+31645011000036106,olive oil | (substance)
+31681005,Trigeminal neuralgia
+31911000168108,Rhinocort Aqueous
+3210011000036104,Lexapro
+32398004,Bronchitis
+32402008,Facial spasm
+3253007,Discolouration of skin
+32643011000036106,potassium
+32798002,Parkinsonism
+32914008,Restless legs
+32970011000036103,Toprol-XL
+3298011000036103,Lipex
+332982000,Uncontrollable vomiting
+33308003,Disorder of back
+3384011000036100,Arthrotec
+34095006,Dehydration
+3424008,Tachycardia
+34436003,Haematuria
+3475011000036104,Plavix
+34789001,Pain in the coccyx
+34839011000036106,pethidine
+34840004,Tendonitis
+35064005,Dark stools
+3527011000036101,Xanax
+3530011000036104,Lopid
+3545003,Diastolic dysfunction
+35489007,Depression
+3559011000036109,Zoloft
+3572011000036102,Mobic
+3589011000036101,Ezetrol
+35918011000036106,Cymbalta
+36031001,Burning feet
+361122008,Impairment level of vision
+361137007,Irregular heart beat
+361138002,Irregular heart rate
+36163009,Night pain
+363058009,Degenerative disorder of muscle
+363346000,Malignant neoplastic disease
+363406005,Malignant tumour of colon
+36349006,Burning pain
+363499005,Malignant tumour of spleen
+3659011000036102,Atacand
+367391008,Malaise
+367466007,Skin irritation
+36955009,Loss of taste
+36971009,Sinusitis
+370143000,Major depressive disorder
+3702011000036109,Oxycontin
+371405004,Disorder of eye
+3716002,Goitre
+371632003,Coma
+3723001,Arthritis
+37340000,Motor neurone disease
+3736011000036100,Avandia
+373931001,Sensation of heaviness in limbs
+373932008,Feels hot
+37714011000036108,zinc
+37787011000036104,vitamin A
+37796009,Migraine
+38013005,Immunosuppression
+38181000168109,Voltaren Emulgel
+38341003,Hypertension
+3848011000036104,Pravachol
+386033004,Neuropathy
+386661006,Fever
+386692008,Menorrhagia
+386705008,Lightheadedness
+386806002,Impaired cognition
+386807006,Memory impairment
+387603000,Impairment of balance
+3877011000036101,Lipitor
+38936003,Abnormal blood pressure
+3904011000036106,Zocor
+39104002,Illness
+3934011000036103,Capoten
+39400004,Hepatic trauma
+39423001,Stammering
+39575007,Urine looks dark
+39621005,Gallbladder disorder
+396275006,Osteoarthritis
+39651011000036100,Solaraze
+397540003,Visual impairment
+397541004,Severe visual impairment
+397803000,Erectile dysfunction
+397825006,Gastric ulcer
+398032003,Loose stool
+398114001,Ehlers-Danlos syndrome
+398152000,Poor muscle tone
+398979000,Pale complexion
+399044006,Glossopyrosis
+399068003,Malignant tumour of prostate
+399114005,Adhesive capsulitis of shoulder
+399122003,Swallowing problem
+399153001,Vertigo
+399269003,Arthropathy
+40095003,Renal injury
+40144003,Morning stiffness - joint
+402234004,Foot eczema
+4031011000036106,Crestor
+40445007,Heart valve regurgitation
+404640003,Dizziness
+405729008,Haematochezia
+40733004,Infection
+40739000,Dysphagia
+40806005,Derealisation
+40917007,Confusion
+409622000,Respiratory failure
+4106009,Rotator cuff syndrome
+4138011000036106,Lipidil
+415690000,Sweating
+415692008,Bunion
+415749005,Rupture of tendon
+41652007,Eye pain
+4171011000036100,Celebrex
+417237009,Blister
+418290006,Itching
+418363000,Itching of skin
+418648005,Blackout
+419076005,Allergic reaction
+419145002,Nightmares
+41931001,Abdominal distension
+419511003,Propensity to adverse reactions to drug
+419581008,Bizarre dreams
+419723007,Mentally dull
+420038007,Feeling unhappy
+420103007,Watery eye
+421262002,Tongue swelling
+4216011000036104,Norvasc
+422400008,Vomiting
+422587007,Nausea
+4230011000036107,Zestril
+423052008,Frequent night waking
+42345000,Polyneuropathy
+42399005,Renal failure
+424196004,Nervousness
+424372002,Oedema of extremity
+424582000,Stress overload
+424647005,Cramp in limb
+4249000,Poor peripheral circulation
+425423002,Pain provoked by movement
+425772008,Tendonitis of foot
+426206001,Constant pain
+426899007,Pain provoked by walking
+426965005,Aphthous ulcer
+427475007,Pain radiating to lumbar region of back
+428061005,Malignant neoplasm of brain
+428281000,Malignant neoplasm of bone
+428724006,Arthropathy of knee joint
+429040005,Ulcer
+429360005,Tendonitis of knee
+429513001,Rupture of Achilles tendon
+429661002,Neuroma of foot
+429783005,Paraesthesia of lower extremity
+42984000,Night sweats
+43005009,Shuffling gait
+43116000,Eczema
+431416001,Menstrual cramp
+432352001,Increased creatine kinase level
+43364001,Abdominal discomfort
+4344011000036106,Neurontin
+43498006,Body fluid retention
+43724002,Chill
+44018007,Cholestatic jaundice syndrome
+44054006,Type 2 diabetes mellitus
+44077006,Numbness
+44169009,Loss of sense of smell
+44186003,Dyssomnia
+4422011000036109,Noten
+443120002,Inflammation of ligament
+443694000,Type II diabetes mellitus uncontrolled
+443798008,Arthritis of shoulder region joint
+443892003,Neuroma
+444003007,Disorder of joint of shoulder region
+444312002,Haemorrhage of abdominal cavity structure
+444702007,Irregular bowel habits
+444827008,Erythema of skin
+444899003,Pain in forearm
+445178008,Burning sensation of vagina
+445197008,White discolouration of skin
+445445006,Raised low density lipoprotein cholesterol
+44548000,Hyperactive behaviour
+44564008,Loss of voice
+448589005,Arthritis of hand
+449614009,Swelling of lower limb
+449618007,Swelling of upper limb
+449917004,Cramp in lower limb
+449918009,Cramp in lower leg
+450316000,Severe dehydration
+45291000168107,Efexor-XR
+45326000,Shoulder pain
+45352006,Spasm
+45979003,Abdominal wind pain
+46040000,Ulceration of colon
+46635009,Type 1 diabetes mellitus
+46991000,Absent minded
+47004009,Dysphonia
+47268002,Reflux
+473008002,Pain in cheek
+473011001,Allergic condition
+4740000,Herpes zoster
+47401000168109,Lescol
+47933007,Foot pain
+48167000,Amnesia
+48500005,Delusional disorder
+48532005,Muscle strain
+48661000,Peritonitis
+48694002,Anxiety
+48926009,Pain in spine
+49049000,Parkinson's disease
+49218002,Hip pain
+49601007,Cardiovascular disease
+49727002,Cough
+50219008,Hoarse
+50829006,Basic learning problem
+51197009,Stomach cramps
+52072009,Heat stroke
+52448006,Dementia
+52526003,Sweating problem
+52613005,Excessive sweating
+52702003,Chronic fatigue syndrome
+52754008,Polymenorrhoea
+53057004,Hand pain
+53215011000036102,Advil
+53430007,Mastalgia
+53458011000036102,Aleve
+53523011000036100,Diovan
+53741008,Coronary arteriosclerosis
+54020011000036108,Voltaren Rapid 25 mg tablet: sugar-coated
+54150009,Upper respiratory tract infection
+54586004,Lower abdominal pain
+54981004,Charleyhorse
+55145008,Stabbing pain
+55222007,Breast tenderness
+55260003,Calcaneal spur
+55300003,Muscle cramp
+55350005,Hungry
+55533009,Forgetful
+55929007,Feeling irritable
+56018004,Wheezing
+56265001,Heart disease
+56273005,Abnormal muscle function
+56317004,Alopecia
+56608008,Pain in wrist
+5662003,Contusion of hand
+56731001,Hypertonia
+56925008,Sexual dysfunction
+571000119103,Daily headache
+57182000,Nerve injury
+57406009,Carpal tunnel syndrome
+57676002,Arthralgia
+58901008,Excitement
+59026006,Blepharospasm
+59050008,Initial insomnia
+59781000168101,Epipen Auto-Injector
+59927004,Hepatic failure
+59976005,Increased belching
+60032008,Unable to concentrate
+60119000,Exhaustion
+60238002,Muscle twitch
+60728008,Abdominal swelling
+60862001,Tinnitus
+609410002,Necrosis of anatomical site
+609599003,Neuropathy of upper limb
+609600000,Neuropathy of lower limb
+61372001,Aggression
+61387006,Moderate anxiety
+6142004,Influenza
+61462000,Malaria
+61777011000036104,codeine + ibuprofen
+6205011000036102,Lipitor 20 mg tablet: film-coated
+6206011000036109,Lipitor 40 mg tablet: film-coated
+6211002,Polyarthritis associated with another disorder
+62315008,Diarrhoea
+62476001,Disorientated
+62507009,Pins and needles
+6285003,Tachycardia
+63102001,Visual disturbance
+6389006,Disturbance in physical behaviour
+63901009,Orchidodynia
+64226004,Colitis
+64531003,Nasal discharge
+6471006,Suicidal thoughts
+64766004,Ulcerative colitis
+64779008,Blood coagulation disorder
+6496011000036105,Celebrex 200 mg capsule: hard
+65124004,Swelling
+66383009,Gingivitis
+67233009,Middle insomnia
+67251005,Increased liver function
+67849003,Excruciating pain
+68172002,Disorder of tendon
+68235000,Nasal congestion
+68566005,Urinary tract infection
+68962001,Myalgia
+69215007,Intolerant of heat
+69791001,Increased venous pressure
+698065002,Acid reflux
+69813011000036107,glucosamine
+698247007,Cardiac arrhythmia
+69867011000036102,caffeine
+69896004,Rheumatoid arthritis
+699262001,Post traumatic osteoarthritis
+699302001,Lumbar arthritis
+699368004,Symptom of ankle
+699376002,Lip swelling
+7006003,Clumsiness
+70076002,Rhinitis
+7011001,Hallucinations
+70153002,Haemorrhoids
+70270011000036104,ibuprofen 5% gel
+70346000,Gingival oedema
+70733008,Limitation of joint movement
+71262003,Ulceration of gingivae
+72405004,Increased appetite
+73211009,Diabetes mellitus
+73442001,Stevens-Johnson syndrome
+73589001,Intervertebral disc prolapse
+73595000,Stress
+74323005,Pain in elbow
+74732009,Mental disorder
+75088002,Urgent desire to urinate
+75183008,Abnormal liver function
+75408008,Feeling angry
+75694006,Pancreatitis
+76000011000036107,B Complex (Cenovis)
+76376003,Endometriosis of uterus
+76742009,Postmenopausal bleeding
+76948002,Severe pain
+77422011000036109,pyridoxine
+77424011000036100,ubidecarenone
+77426011000036108,lysine
+77435011000036104,ascorbic acid
+77436011000036106,fish oil natural
+77442011000036106,cyanocobalamin
+77461011000036109,alpha tocopherol
+77547008,Degeneration of intervertebral disc
+77692006,Hypersomnia
+78514002,Thigh pain
+78584011000036106,soy lecithin
+78860006,Heavy feeling in eyelids
+79012001,Vaginospasm
+79015004,Worried
+79395009,Dry hair
+7973008,Abnormal vision
+79890006,Loss of appetite
+8009008,Nocturnal enuresis
+80182007,Irregular menstruation
+80313002,Palpitations
+80449002,Muscle fatigue
+80515008,Hepatomegaly
+80690008,Degenerative disease of the central nervous system
+80954004,Respiratory depression
+80967001,Dental caries
+81308009,Encephalopathy
+81498004,Bursitis of hip
+81680005,Neck pain
+81680008,Neck pain
+82297005,Congestion of nasal sinus
+82423001,Chronic pain
+82470000,Muscle fasciculation
+82639001,Premenstrual tension syndrome
+82883008,Disturbance in speech rhythm
+82971005,Impaired mobility
+82991003,Generalised aches and pains
+83156004,Sense of smell impaired
+83225011000036106,Maxalt
+83421005,Failure to lose weight
+83547004,Cold sweat
+8357008,Reduced libido
+83901003,Sj�gren's syndrome
+8392000,Non-smoker
+84017003,Bursitis
+84229001,Fatigue
+84445001,Joint stiffness
+84480002,Retching
+84946008,Extreme exhaustion
+8510008,Reduced mobility
+85418005,Abnormal dreams
+85828009,Autoimmune disease
+86044005,Amyotrophic lateral sclerosis
+86094006,Chronic rhinitis
+86651002,Pulse fast
+87486003,Aphasia
+87715008,Aptyalism
+88092000,Muscle atrophy
+89362005,Weight loss
+89419008,Loss of equilibrium
+8943002,Weight gain
+90128006,Photosensitivity
+90446007,Pruritus ani
+90560007,Gout
+90673000,Burning sensation
+90708001,Kidney disease
+90834002,Pain in limb
+91019004,Paraesthesia
+9126005,Menstrual spotting
+923927011000036105,melatonin
+931804011000036107,omega-3-acid ethyl esters-90
+93478000,Intraocular haemorrhage
+95319004,Skin nodule
+95320005,Disorder of skin
+95359001,Mucosal numbness
+95418008,Muscle spasms of head AND/OR neck
+95421005,Intercostal myalgia
+95453001,Subdural haematoma
+95570007,Renal calculus
+95655001,Ophthalmic migraine
+95677002,Disorder of vision
+95847005,Muscle injury
+95891005,Influenza-like illness
+9829001,Gastric ulcer with perforation
+9991008,Abdominal colic
