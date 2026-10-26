@@ -5,17 +5,18 @@ import html
 import base64
 import io
 import json
-import re
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import pandas as pd
+import joblib
+from scipy import sparse
 import streamlit as st
 import streamlit.components.v1 as components
 import speech_recognition as sr
 import torch
-import torch.nn.functional as F
-from transformers import AutoModel, AutoModelForTokenClassification, AutoTokenizer
+from transformers import AutoModelForTokenClassification, AutoTokenizer
 from huggingface_hub import hf_hub_download
 
 # -----------------------------------------------------------------------------
@@ -36,8 +37,10 @@ if not LOGO_PATH.exists() and (ROOT / "medphrase_logo.png").exists():
     LOGO_PATH = ROOT / "medphrase_logo.png"
 BIOBERT_LOCAL_DIR = ASSETS / "biobert"
 CANDIDATES_PATH = ASSETS / "candidate_adr_table.csv"
-EMBEDDINGS_PATH = ASSETS / "concept_embeddings_adr.npy"
-SAPBERT_MODEL_NAME = "cambridgeltl/SapBERT-from-PubMedBERT-fulltext"
+CHAR_VECTORIZER_PATH = ASSETS / "char_tfidf_vectorizer.joblib"
+CHAR_ALIAS_MATRIX_PATH = ASSETS / "char_alias_matrix.npz"
+CHAR_ALIASES_PATH = ASSETS / "char_aliases.csv"
+CHAR_CANDIDATES_PATH = ASSETS / "char_candidate_table.csv"
 MAX_BODY_TOKENS = 510
 WINDOW_STRIDE = 384
 
@@ -205,7 +208,8 @@ def source_for_biobert() -> tuple[str, str | None]:
 
 
 @st.cache_resource(show_spinner=False)
-def load_models() -> tuple[Any, Any, Any, Any, pd.DataFrame, torch.Tensor, torch.device]:
+def load_models() -> tuple[Any, Any, pd.DataFrame, Any, Any, pd.DataFrame, torch.device]:
+    """Load BioBERT plus the frozen character-TF-IDF normalizer assets."""
     source, hf_token = source_for_biobert()
     device = torch.device("cpu")
     torch.set_num_threads(max(1, min(2, os.cpu_count() or 1)))
@@ -215,65 +219,60 @@ def load_models() -> tuple[Any, Any, Any, Any, pd.DataFrame, torch.Tensor, torch
     )
     if not bio_tokenizer.is_fast:
         raise RuntimeError("The saved BioBERT tokenizer must be a fast tokenizer.")
-
     bio_model = AutoModelForTokenClassification.from_pretrained(
         source, token=hf_token, low_cpu_mem_usage=True
     )
     bio_model.to(device).eval()
 
-    sap_tokenizer = AutoTokenizer.from_pretrained(SAPBERT_MODEL_NAME)
-    sap_model = AutoModel.from_pretrained(
-        SAPBERT_MODEL_NAME, low_cpu_mem_usage=True
-    )
-    sap_model.to(device).eval()
-
-    # Prefer local assets for development. For deployment, the same private
-    # Hugging Face repository can also hold these assets so they need not be
-    # committed to the public GitHub source repository.
-    candidates_path = CANDIDATES_PATH
-    embeddings_path = EMBEDDINGS_PATH
-    if not candidates_path.exists() or not embeddings_path.exists():
-        asset_repo_id = secret_value("BIOBERT_REPO_ID")
+    # Use the exact fitted vectorizer, alias matrix, and aliases exported from Colab.
+    # For deployment, keep these artifacts in the same private HF repo as BioBERT.
+    asset_names = {
+        "vectorizer": (CHAR_VECTORIZER_PATH, "char_tfidf_vectorizer.joblib"),
+        "alias_matrix": (CHAR_ALIAS_MATRIX_PATH, "char_alias_matrix.npz"),
+        "aliases": (CHAR_ALIASES_PATH, "char_aliases.csv"),
+        "candidates": (CHAR_CANDIDATES_PATH, "char_candidate_table.csv"),
+    }
+    resolved: dict[str, Path] = {}
+    asset_repo_id = secret_value("BIOBERT_REPO_ID")
+    for key, (local_path, filename) in asset_names.items():
+        if local_path.exists():
+            resolved[key] = local_path
+            continue
         if not asset_repo_id:
             raise FileNotFoundError(
-                "Normalization assets are missing. For local use, place "
-                "candidate_adr_table.csv and concept_embeddings_adr.npy in assets/. "
-                "For hosted use, upload both files to the private Hugging Face model "
-                "repository and set BIOBERT_REPO_ID in Streamlit Secrets."
+                f"Missing {filename}. Export the character-TF-IDF assets from Colab and "
+                "upload them to the private Hugging Face repository configured by BIOBERT_REPO_ID, "
+                "or place them in the app's assets/ folder."
             )
         try:
-            candidates_path = Path(hf_hub_download(
-                repo_id=asset_repo_id,
-                filename="candidate_adr_table.csv",
-                token=hf_token,
-            ))
-            embeddings_path = Path(hf_hub_download(
-                repo_id=asset_repo_id,
-                filename="concept_embeddings_adr.npy",
-                token=hf_token,
+            resolved[key] = Path(hf_hub_download(
+                repo_id=asset_repo_id, filename=filename, token=(secret_value("HF_TOKEN") or hf_token)
             ))
         except Exception as exc:
             raise RuntimeError(
-                "Could not download the normalization assets from the configured "
-                "Hugging Face repository. Confirm that both files are in the repo "
-                "root and that HF_TOKEN has read access to that repository."
+                f"Could not download {filename} from the configured Hugging Face repository. "
+                "Check that the file is uploaded and HF_TOKEN has read access."
             ) from exc
 
-    candidates = pd.read_csv(candidates_path, dtype={"snomed_id": str})
-    embeddings = np.load(embeddings_path).astype(np.float32)
-    if len(candidates) != embeddings.shape[0]:
-        raise ValueError(
-            "The candidate concept table and embedding matrix have different row counts. "
-            "Export both from the same notebook run and preserve their row order."
-        )
-    if embeddings.ndim != 2 or embeddings.shape[1] != 768:
-        raise ValueError(
-            f"Expected SapBERT concept embeddings of shape (N, 768), got {embeddings.shape}."
-        )
+    vectorizer = joblib.load(resolved["vectorizer"])
+    alias_matrix = sparse.load_npz(resolved["alias_matrix"]).tocsr()
+    aliases = pd.read_csv(resolved["aliases"], dtype={"snomed_id": str})
+    candidates = pd.read_csv(resolved["candidates"], dtype={"snomed_id": str})
 
-    concept_matrix = torch.tensor(embeddings, dtype=torch.float32, device=device)
-    concept_matrix = F.normalize(concept_matrix, p=2, dim=1)
-    return bio_tokenizer, bio_model, sap_tokenizer, sap_model, candidates, concept_matrix, device
+    required_alias_cols = {"mention", "snomed_id"}
+    required_candidate_cols = {"snomed_id", "concept_name"}
+    if not required_alias_cols.issubset(aliases.columns):
+        raise ValueError(f"char_aliases.csv must contain columns {sorted(required_alias_cols)}")
+    if not required_candidate_cols.issubset(candidates.columns):
+        raise ValueError(f"char_candidate_table.csv must contain columns {sorted(required_candidate_cols)}")
+    if alias_matrix.shape[0] != len(aliases):
+        raise ValueError("Alias matrix row count does not match char_aliases.csv.")
+    if alias_matrix.shape[1] != len(vectorizer.get_feature_names_out()):
+        raise ValueError("Alias matrix feature count does not match the saved TF-IDF vectorizer.")
+
+    candidates["snomed_id"] = candidates["snomed_id"].astype(str)
+    aliases["snomed_id"] = aliases["snomed_id"].astype(str)
+    return bio_tokenizer, bio_model, candidates, vectorizer, alias_matrix, aliases, device
 
 
 def extract_adr_mentions(text: str, bio_tokenizer: Any, bio_model: Any, device: torch.device) -> list[dict[str, Any]]:
@@ -354,102 +353,57 @@ def extract_adr_mentions(text: str, bio_tokenizer: Any, bio_model: Any, device: 
 
 def normalize_phrase(
     phrase: str,
-    sap_tokenizer: Any,
-    sap_model: Any,
     candidates: pd.DataFrame,
-    concept_matrix: torch.Tensor,
-    device: torch.device,
+    vectorizer: Any,
+    alias_matrix: Any,
+    aliases: pd.DataFrame,
     top_k: int = 5,
 ) -> list[dict[str, Any]]:
-    """Rank candidates with SapBERT CLS embeddings and cosine similarity."""
-    encoded = sap_tokenizer(
-        [phrase], padding=True, truncation=True, max_length=64,
-        return_tensors="pt"
-    )
-    encoded = {key: value.to(device) for key, value in encoded.items()}
-    with torch.inference_mode():
-        output = sap_model(**encoded)
-        phrase_vector = F.normalize(output.last_hidden_state[:, 0, :], p=2, dim=1)
-        similarities = (phrase_vector @ concept_matrix.T)[0]
-        scores, indices = torch.topk(similarities, k=min(top_k, len(candidates)))
+    """Rank SNOMED CT concepts by max character-TF-IDF similarity over training aliases."""
+    top_k = min(max(1, int(top_k)), len(candidates))
+    query_matrix = vectorizer.transform([str(phrase)])
+    alias_scores = (query_matrix @ alias_matrix.T).toarray().ravel()
+
+    # Preserve the validated approach: each concept receives its strongest alias match.
+    concept_scores: dict[str, float] = {}
+    alias_ids = aliases["snomed_id"].astype(str).to_numpy()
+    for concept_id, score in zip(alias_ids, alias_scores):
+        if score > concept_scores.get(concept_id, -1.0):
+            concept_scores[concept_id] = float(score)
 
     ranked: list[dict[str, Any]] = []
-    for score, index in zip(scores.cpu().tolist(), indices.cpu().tolist()):
-        concept = candidates.iloc[index]
+    candidates = candidates.reset_index(drop=True)
+    score_rows = []
+    for _, concept in candidates.iterrows():
+        concept_id = str(concept["snomed_id"])
+        score_rows.append((concept_scores.get(concept_id, 0.0), concept_id, str(concept["concept_name"])))
+    score_rows.sort(key=lambda row: row[0], reverse=True)
+
+    for score, concept_id, concept_name in score_rows[:top_k]:
         ranked.append({
-            "snomed_id": str(concept["snomed_id"]),
-            "snomed_name": str(concept["concept_name"]),
-            "cosine_similarity": float(score),
+            "snomed_id": concept_id,
+            "snomed_name": concept_name,
+            "tfidf_similarity": float(score),
         })
     return ranked
 
 
-def choose_normalization_input(text: str, start: int, end: int, strategy: str) -> str:
-    """Choose the text sent to SapBERT without changing BioBERT's extracted span."""
-    phrase = text[int(start):int(end)]
-    if strategy == "Phrase only (recommended baseline)":
-        return phrase
-
-    sentence_match = None
-    for match in re.finditer(r"[^.!?\n]+(?:[.!?]+|$)", text):
-        if match.start() <= int(start) and int(end) <= match.end():
-            sentence_match = match
-            break
-
-    if sentence_match is None:
-        left = max(0, int(start) - 100)
-        right = min(len(text), int(end) + 100)
-        raw_sentence = text[left:right]
-        leading = len(raw_sentence) - len(raw_sentence.lstrip())
-        sentence = raw_sentence.strip()
-        sentence_start = left + leading
-    else:
-        raw_sentence = sentence_match.group(0)
-        leading = len(raw_sentence) - len(raw_sentence.lstrip())
-        sentence = raw_sentence.strip()
-        sentence_start = sentence_match.start() + leading
-
-    if strategy == "Full sentence (experimental)":
-        return sentence or phrase
-
-    if strategy == "Phrase + nearby words (experimental)":
-        tokens = list(re.finditer(r"\S+", sentence))
-        local_start = int(start) - sentence_start
-        local_end = int(end) - sentence_start
-        overlapping = [
-            i for i, token in enumerate(tokens)
-            if token.start() < local_end and token.end() > local_start
-        ]
-        if not overlapping:
-            return phrase
-        left_index = max(0, overlapping[0] - 3)
-        right_index = min(len(tokens) - 1, overlapping[-1] + 3)
-        return sentence[tokens[left_index].start():tokens[right_index].end()].strip() or phrase
-
-    # Safe fallback if an unknown strategy label reaches this function.
-    return phrase
-
-
 def analyze_text(
     text: str,
-    normalization_strategy: str = "Phrase only (recommended baseline)",
+    normalization_strategy: str = "Character TF-IDF (phrase-only)",
 ) -> tuple[list[dict[str, Any]], int]:
-    bio_tokenizer, bio_model, sap_tokenizer, sap_model, candidates, concept_matrix, device = load_models()
-    # BioBERT extraction is identical across normalization strategies.
+    bio_tokenizer, bio_model, candidates, vectorizer, alias_matrix, aliases, device = load_models()
     mentions = extract_adr_mentions(text, bio_tokenizer, bio_model, device)
     results: list[dict[str, Any]] = []
     for item in mentions:
-        normalization_input = choose_normalization_input(
-            text, item["start"], item["end"], normalization_strategy
-        )
+        normalization_input = item["mention"]  # phrase-only was the selected validation setting
         ranked = normalize_phrase(
-            normalization_input, sap_tokenizer, sap_model,
-            candidates, concept_matrix, device, top_k=5
+            normalization_input, candidates, vectorizer, alias_matrix, aliases, top_k=5
         )
         results.append({
             **item,
             "normalization_input": normalization_input,
-            "normalization_strategy": normalization_strategy,
+            "normalization_strategy": "Character TF-IDF (phrase-only)",
             "ranked_concepts": ranked,
         })
     return results, len(candidates)
@@ -569,7 +523,7 @@ st.markdown(
     'side effects with standardized medical concepts. Write a patient-style sentence '
     'and inspect the model suggestions, from phrase extraction to concept ranking.</p>'
     '<div class="hero-pills"><span class="pill">01&nbsp; BioBERT · extraction</span>'
-    '<span class="pill">02&nbsp; SapBERT · normalization</span>'
+    '<span class="pill">02&nbsp; Character TF-IDF · normalization</span>'
     '<span class="pill">03&nbsp; SNOMED CT · terminology</span></div></section>',
     unsafe_allow_html=True,
 )
@@ -665,19 +619,10 @@ with left:
         label_visibility="visible",
         help="Use fictional text only. Do not enter identifiable patient information.",
     )
-    normalization_strategy = st.selectbox(
-        "SapBERT normalization input",
-        options=[
-            "Phrase only (recommended baseline)",
-            "Phrase + nearby words (experimental)",
-            "Full sentence (experimental)",
-        ],
-        index=0,
-        help=(
-            "BioBERT extraction stays unchanged. This setting controls only the text sent to SapBERT. "
-            "Validation experiments found phrase-only performed best overall; context options are exploratory, "
-            "so compare outputs rather than assuming longer text is better."
-        ),
+    normalization_strategy = "Character TF-IDF (phrase-only)"
+    st.caption(
+        "Concept ranking uses the frozen character-level TF-IDF model and training aliases. "
+        "The phrase-only setting was selected from validation experiments."
     )
     run_col, clear_col = st.columns([1, 0.6], gap="small")
     def clear_text_state() -> None:
@@ -720,9 +665,9 @@ with right:
         st.markdown("**01 — Extract**")
         st.caption("BioBERT predicts adverse-reaction spans and their character offsets.")
         st.markdown("**02 — Represent**")
-        st.caption("SapBERT ranks concepts using the extracted phrase or an optional context-expanded input.")
+        st.caption("Character TF-IDF compares the extracted phrase with aliases from training data.")
         st.markdown("**03 — Rank**")
-        st.caption("Cosine similarity orders candidate SNOMED CT concepts from most to less similar.")
+        st.caption("The strongest alias similarity ranks candidate SNOMED CT concepts.")
     st.markdown(
         '<div class="note"><b>Interpretation note.</b> Similarity is a ranking signal, '
         'not a calibrated probability. Suggestions require human review and are not diagnoses.</div>',
@@ -753,7 +698,7 @@ else:
     source_text = st.session_state.get("analysis_source_text", "")
     candidate_count = st.session_state.get("analysis_candidate_count", 0)
     used_strategy = st.session_state.get("analysis_strategy", "Phrase only (recommended baseline)")
-    st.caption(f"SapBERT input strategy used: {used_strategy}")
+    st.caption(f"Normalizer used: {used_strategy}")
     metrics = st.columns(3, gap="medium")
     with metrics[0]:
         render_metric("Candidate spans", str(len(results)), "Predicted by BioBERT")
@@ -774,20 +719,20 @@ else:
                     f'<div class="result-card"><div class="result-top">'
                     f'<div><div class="mention">{index:02d} &nbsp; {html.escape(result["mention"])}</div>'
                     f'<div class="offset">Characters {result["start"]}–{result["end"]}</div></div>'
-                    f'<div class="sim-badge">Cosine {top["cosine_similarity"]:.3f}</div></div>'
+                    f'<div class="sim-badge">TF-IDF {top["tfidf_similarity"]:.3f}</div></div>'
                     f'<div class="concept-label">Top-ranked concept</div>'
                     f'<div class="concept-name">{html.escape(top["snomed_name"])}</div>'
                     f'<div class="concept-id">SNOMED CT · {html.escape(top["snomed_id"])}</div></div>',
                     unsafe_allow_html=True,
                 )
             with st.expander(f"View top-five ranking for “{result['mention']}”"):
-                st.caption(f"Text sent to SapBERT: {result.get('normalization_input', result['mention'])}")
+                st.caption(f"Phrase ranked by character TF-IDF: {result.get('normalization_input', result['mention'])}")
                 rank_df = pd.DataFrame([
                     {
                         "Rank": i,
                         "SNOMED CT ID": concept["snomed_id"],
                         "Concept name": concept["snomed_name"],
-                        "Cosine similarity": round(concept["cosine_similarity"], 4),
+                        "TF-IDF similarity": round(concept["tfidf_similarity"], 4),
                     }
                     for i, concept in enumerate(ranked, start=1)
                 ])
@@ -807,12 +752,12 @@ else:
                         "mention": result["mention"],
                         "start": result["start"],
                         "end": result["end"],
-                        "normalization_strategy": result.get("normalization_strategy", "Phrase only (recommended baseline)"),
+                        "normalization_strategy": result.get("normalization_strategy", "Character TF-IDF (phrase-only)"),
                         "normalization_input": result.get("normalization_input", result["mention"]),
                         "rank": rank,
                         "snomed_id": concept["snomed_id"],
                         "snomed_name": concept["snomed_name"],
-                        "cosine_similarity": concept["cosine_similarity"],
+                        "tfidf_similarity": concept["tfidf_similarity"],
                     })
             export_df = pd.DataFrame(export_rows)
             if not export_df.empty:
