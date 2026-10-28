@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 import html
 import base64
 import io
@@ -351,6 +352,51 @@ def extract_adr_mentions(text: str, bio_tokenizer: Any, bio_model: Any, device: 
     ]
 
 
+def informal_query_variants(phrase: str) -> list[str]:
+    """Return conservative spelling/colloquial variants for phrase normalisation.
+
+    The original phrase is always retained. These rules only generate additional
+    search queries; they do not alter the extracted span shown to the user.
+    They are heuristics and must be evaluated before making performance claims.
+    """
+    original = str(phrase).strip()
+    if not original:
+        return [original]
+
+    variants = [original]
+
+    # Common informal forms with relatively direct clinical-language equivalents.
+    replacements = (
+        (r"\bthrowing\s+up\b", "vomiting"),
+        (r"\bpuking\b", "vomiting"),
+        (r"\bpuked\b", "vomited"),
+        (r"\btummy\b", "stomach"),
+        (r"\blight[- ]?headed\b", "light headed"),
+        (r"\brlly\b|\brly\b", "really"),
+    )
+    expanded = original.lower()
+    for pattern, replacement in replacements:
+        expanded = re.sub(pattern, replacement, expanded, flags=re.IGNORECASE)
+    if expanded != original.lower():
+        variants.append(expanded)
+
+    # Reduce exaggerated character repetitions while preserving ordinary doubles
+    # (e.g. "dizzzzy" -> "dizzy", not "dizy").
+    de_stretched = re.sub(r"(.)\1{2,}", r"\1\1", original.lower())
+    if de_stretched not in {v.lower() for v in variants}:
+        variants.append(de_stretched)
+
+    # Include a punctuation-light variant for casual typing (e.g. light-headed).
+    punctuation_light = re.sub(r"[^\w\s'-]", " ", original.lower())
+    punctuation_light = re.sub(r"\s+", " ", punctuation_light).strip()
+    if punctuation_light and punctuation_light not in {v.lower() for v in variants}:
+        variants.append(punctuation_light)
+
+    # Stable de-duplication, preserving the original as the first query.
+    seen = set()
+    return [v for v in variants if v and not (v.lower() in seen or seen.add(v.lower()))]
+
+
 def normalize_phrase(
     phrase: str,
     candidates: pd.DataFrame,
@@ -359,10 +405,14 @@ def normalize_phrase(
     aliases: pd.DataFrame,
     top_k: int = 5,
 ) -> list[dict[str, Any]]:
-    """Rank SNOMED CT concepts by max character-TF-IDF similarity over training aliases."""
+    """Rank concepts by best alias similarity across original and informal query variants."""
     top_k = min(max(1, int(top_k)), len(candidates))
-    query_matrix = vectorizer.transform([str(phrase)])
-    alias_scores = (query_matrix @ alias_matrix.T).toarray().ravel()
+    query_variants = informal_query_variants(str(phrase))
+    query_matrix = vectorizer.transform(query_variants)
+    all_scores = (query_matrix @ alias_matrix.T).toarray()
+    # Each alias gets its strongest score across query variants; concepts then
+    # retain the existing max-over-aliases aggregation below.
+    alias_scores = all_scores.max(axis=0) if all_scores.size else np.zeros(len(aliases))
 
     # Preserve the validated approach: each concept receives its strongest alias match.
     concept_scores: dict[str, float] = {}
@@ -390,7 +440,7 @@ def normalize_phrase(
 
 def analyze_text(
     text: str,
-    normalization_strategy: str = "Character TF-IDF (phrase-only)",
+    normalization_strategy: str = "Character TF-IDF + informal query variants (experimental)",
 ) -> tuple[list[dict[str, Any]], int]:
     bio_tokenizer, bio_model, candidates, vectorizer, alias_matrix, aliases, device = load_models()
     mentions = extract_adr_mentions(text, bio_tokenizer, bio_model, device)
@@ -403,7 +453,7 @@ def analyze_text(
         results.append({
             **item,
             "normalization_input": normalization_input,
-            "normalization_strategy": "Character TF-IDF (phrase-only)",
+            "normalization_strategy": "Character TF-IDF + informal query variants (experimental)",
             "ranked_concepts": ranked,
         })
     return results, len(candidates)
@@ -619,10 +669,11 @@ with left:
         label_visibility="visible",
         help="Use fictional text only. Do not enter identifiable patient information.",
     )
-    normalization_strategy = "Character TF-IDF (phrase-only)"
+    normalization_strategy = "Character TF-IDF + informal query variants (experimental)"
     st.caption(
-        "Concept ranking uses the frozen character-level TF-IDF model and training aliases. "
-        "The phrase-only setting was selected from validation experiments."
+        "Concept ranking uses character-level TF-IDF over training aliases, with conservative "
+        "informal spelling variants added as extra search queries. Original text is preserved; "
+        "the heuristic enhancement still needs held-out evaluation."
     )
     run_col, clear_col = st.columns([1, 0.6], gap="small")
     def clear_text_state() -> None:
