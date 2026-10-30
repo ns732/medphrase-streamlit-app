@@ -219,14 +219,9 @@ https://medphrase-app-app-nw74jrnchw7dsvz8usimqm.streamlit.app/
 
 ## References
 
--   Karimi, S., Metke-Jimenez, A., Kemp, M. and Wang, C. (2015) 'CADEC:
-    A corpus of adverse drug event annotations', *Journal of Biomedical
-    Informatics*, 55, pp. 73--81.
-    https://doi.org/10.1016/j.jbi.2015.03.010
--   Lee, J. et al. (2020) 'BioBERT: a pre-trained biomedical language
-    representation model for biomedical text mining', *Bioinformatics*,
-    36(4), pp. 1234--1240. https://doi.org/10.1093/bioinformatics/btz682
--   Liu, F., Shareghi, E., Meng, Z., Basaldella, M. and
-    Collier, N. (2021) 'Self-alignment pretraining for biomedical entity
-    representations', *Proceedings of NAACL-HLT 2021*, pp. 4228--4238.
-    https://doi.org/10.18653/v1/2021.naacl-main.334
+Dataset: https://data.csiro.au/collection/csiro:10948
+Karimi, S., Metke-Jimenez, A., Kemp, M. and Wang, C. (2015) ‘CADEC: A corpus of adverse drug event annotations’, Journal of Biomedical Informatics, 55, pp. 73–81. Available at: https://doi.org/10.1016/j.jbi.2015.03.010. 
+Lee, J. et al. (2020) ‘BioBERT: a pre-trained biomedical language representation model for biomedical text mining’, Bioinformatics, 36(4), pp. 1234–1240. Available at: https://doi.org/10.1093/bioinformatics/btz682.
+Liu, F., Shareghi, E., Meng, Z., Basaldella, M. and Collier, N. (2021) ‘Self-alignment pretraining for biomedical entity representations’, in Proceedings of NAACL-HLT 2021, pp. 4228–4238. Available at: https://doi.org/10.18653/v1/2021.naacl-main.334
+Elbiach, O., Grissette, H. and Nfaoui, E.H. (2025) ‘Leveraging transformer models for enhanced pharmacovigilance: A comparative analysis of ADR extraction from biomedical and social media texts’, AI, 6(2), article 31. Available at: https://doi.org/10.3390/ai6020031
+
